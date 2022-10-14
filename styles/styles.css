@@ -226,6 +226,21 @@ html {
   overflow: hidden;
 }
 
+.skipLink {
+  position: absolute;
+  left: -1000px;
+  z-index: 10;
+  background-color: #F5F5F5;
+  color: #151514;
+  font-size: 1rem;
+  padding: 10px 0;
+}
+.skipLink:focus {
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -235,6 +250,8 @@ h2 {
   font-family: "Kumar One Outline", cursive;
   font-size: 6.8rem;
   line-height: 6.4rem;
+  letter-spacing: normal;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -242,6 +259,7 @@ h3 {
   font-size: 3.3rem;
   line-height: 5.8rem;
   letter-spacing: 2.1px;
+  text-transform: uppercase;
 }
 
 p {
@@ -249,15 +267,17 @@ p {
   font-size: 2rem;
   line-height: 3.2rem;
   letter-spacing: 2px;
+  text-transform: capitalize;
 }
 
 a {
   font-family: "Lato", sans-serif;
   font-weight: 700;
+  text-align: center;
   font-size: 2rem;
   line-height: 2.9rem;
   letter-spacing: 1.4px;
-  text-align: center;
+  text-transform: uppercase;
 }
 
 .logo {
@@ -265,14 +285,16 @@ a {
   font-size: 2.2rem;
   line-height: 2.4rem;
   letter-spacing: 1.2px;
+  text-transform: uppercase;
 }
 
 .btn {
   font-family: "Kumar One", cursive;
+  text-align: center;
   font-size: 2rem;
   line-height: 3.2rem;
   letter-spacing: 1px;
-  text-align: center;
+  text-transform: uppercase;
 }
 
 h1, h2, h3, p, ul, li, input, label {
@@ -293,4 +315,10 @@ img {
   max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1260px;
+  margin: 0 auto;
 }
