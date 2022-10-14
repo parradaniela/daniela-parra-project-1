@@ -1,0 +1,51 @@
+@use './variables' as v;
+
+html {
+    font-size: 62.5%;
+}
+
+h1,
+h2 {
+    font-family: v.$heading-outline;
+    font-size: 6.8rem;
+    line-height: 6.4rem;
+}
+
+h3 {
+    font-family: v.$heading-filled;
+    font-size: 3.3rem;
+    line-height: 5.8rem;
+    letter-spacing: 2.1px;
+}
+
+p {
+    font-family: v.$body-text;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    letter-spacing: 2px;
+}
+
+a {
+    font-family: v.$body-text;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.9rem;
+    letter-spacing: 1.4px;
+    text-align: center;
+}
+
+.logo {
+    font-family: v.$heading-filled;
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+    letter-spacing: 1.2px;
+    
+}
+
+.btn {
+    font-family: v.$heading-filled;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    letter-spacing: 1px;
+    text-align: center;
+}

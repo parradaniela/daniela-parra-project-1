@@ -225,3 +225,72 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+html {
+  font-size: 62.5%;
+}
+
+h1,
+h2 {
+  font-family: "Kumar One Outline", cursive;
+  font-size: 6.8rem;
+  line-height: 6.4rem;
+}
+
+h3 {
+  font-family: "Kumar One", cursive;
+  font-size: 3.3rem;
+  line-height: 5.8rem;
+  letter-spacing: 2.1px;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 2px;
+}
+
+a {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.9rem;
+  letter-spacing: 1.4px;
+  text-align: center;
+}
+
+.logo {
+  font-family: "Kumar One", cursive;
+  font-size: 2.2rem;
+  line-height: 2.4rem;
+  letter-spacing: 1.2px;
+}
+
+.btn {
+  font-family: "Kumar One", cursive;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+h1, h2, h3, p, ul, li, input, label {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
