@@ -22,6 +22,8 @@ h3 {
     @include font-styles(3.3rem, 5.8rem, 2.1px, uppercase);
 }
 
+//TODO: style h4 and inputs
+
 p {
     font-family: v.$body-text;
     @include font-styles(2rem, 3.2rem, 2px, capitalize);

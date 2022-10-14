@@ -13,6 +13,82 @@
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
+    <!-- Skip link -->
+    <a href="#main-blog-content" class="skipLink">Skip to main content</a>
+    <header class="blog-header">
+        <div class="wrapper">
+            <div>
+                <h3 class="logo">Sanctuary Helpers</h3>
+                <h2>Blog</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./index.html/#about">About</a></li>
+                    <li><a href="./blog.html" class="underline">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div> <!-- END .wrapper -->
+    </header>
+
+    <main id="main-blog-content">
+        <!-- Blog posts section -->
+        <section class="blog-posts">
+            <article></article>
+            <aside></aside>
+        </section>
+
+        <!-- Comments section -->
+        <section class="blog-comments">
+            <div class="wrapper">
+                <div class="blog-comments-display">
+                    <h3>Comments:</h3>
+                    <ul>
+                        <!-- First comment -->
+                        <li>
+                            <div class="blog-comments-img">
+                                <img src="./sanctuary-helpers-final-images/comment-image.jpg" alt="User profile photo">
+                            </div>
+                            <div class="blog-comments-text">
+                                <h4>Tuesday October 9th, 2019 by Davin</h4>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique suscipit quo ratione libero adipisci voluptatem dignissimos nesciunt atque! Placeat incidunt accusamus alias recusandae molestiae enim provident repellendus mollitia deserunt vel?</p>
+                            </div>
+                        </li>
+                        <!-- Second comment -->
+                        <li>
+                            <div class="blog-comments-img">
+                                <img src="./sanctuary-helpers-final-images/comment-image2.jpg" alt="User profile photo">
+                            </div>
+                            <div class="blog-comments-text">
+                                <h4>Wednesday October 10th, 2019 by Lisa</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt natus praesentium iste? Provident est minima dignissimos aliquid labore, nisi perferendis.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div> <!-- END .blog-comments-display -->
+    
+                <form action="#" class="blog-form">
+                    <fieldset>
+                        <div>
+                            <!-- Name field -->
+                            <input type="text" id="blog-form-name" name="blog" placeholder="Name" required>
+                            <label for="blog-form-name" name="blog" class="sr-only">Name</label>
+    
+                            <!-- Email field -->
+                            <input type="email" id="blog-form-email" name="blog" placeholder="Email address" required>
+                        </div>
+                        <textarea name="blog" id="blog-form-textarea" cols="30" rows="10" placeholder="Message"></textarea>
+                        <button class="btn">Post comment</button>
+                    </fieldset>
+                </form>
+            </div> <!-- END .wrapper -->
+        </section>
+    </main>
+
+    <footer class="footer wrapper">
+        <p>Copyright © 2019 HackerYou</p>
+    </footer>
     
 </body>
 </html>
