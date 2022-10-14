@@ -15,9 +15,80 @@
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-    <!-- <i class="fa-brands fa-facebook-f"></i> -->
-    <!-- <i class="fa-brands fa-instagram"></i> -->
-    <!-- <i class="fa-brands fa-twitter"></i> -->
-    <!-- <i class="fa-brands fa-whatsapp"></i> -->
+    <!-- Skip Link -->
+    <a href="#main-contact-content" class="skipLink">Skip to main content</a>
+    <header class="contact-header">
+        <div class="wrapper">
+            <div>
+                <h3 class="logo">Sanctuary Helpers</h3>
+                <h2>Get in touch</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./index.html/#about">About</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div> <!-- END .wrapper -->
+    </header>
+
+    <main id="main-contact-content">
+        <div class="wrapper">
+            <!-- Contact form section -->
+            <form action="#" class="contact-form">
+                <fieldset>
+                    <div>
+                        <!-- Name field -->
+                        <input type="text" id="contact-form-name" name="contact" placeholder="Name" required>
+                        <label for="contact-form-name" name="contact" class="sr-only">Name</label>
+
+                        <!-- Email field -->
+                        <input type="email" id="contact-form-email" name="contact" placeholder="Email address" required>
+                    </div>
+                    <textarea name="contact" id="contact-form-textarea" cols="30" rows="10" placeholder="Message"></textarea>
+                    <button class="btn">Submit</button>
+                </fieldset>
+            </form>
+
+            <div class="contact-socials">
+                <!-- Socials navigation -->
+                <nav class="contact-socials-nav">
+                    <ul>
+                        <!-- Facebook -->
+                        <li>
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <!-- Instagram -->
+                        <li>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a></i>
+                        </li>
+                        <!-- Twitter -->
+                        <li>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a></i>
+                        </li>
+                        <!-- Whatsapp -->
+                        <li>
+                            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Contact info -->
+                <ul class="contact-socials-text">
+                    <li><p>info@email.com</p></li>
+                    <li><p>123 - 456 - 7890</p></li>
+                    <li><p>123 Queen Street West,</p></li>
+                    <li><p>Unit 10</p></li>
+                    <li><p>Toronto, Ontario</p></li>
+                    <li><p>M5V2D5</p></li>
+                </ul>
+            </div> <!-- END .contact-socials-->
+        </div> <!-- END .wrapper-->
+    </main>
+    <footer class="footer wrapper">
+        <p>Copyright © 2019 HackerYou</p>
+    </footer>
 </body>
 </html>
