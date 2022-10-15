@@ -1,0 +1,48 @@
+@use '../global/variables' as v;
+
+.articles {
+    background-color: v.$color-secondary-light;
+    display: flex;
+    flex-direction: column;
+
+    &-row {
+        display: flex;
+        flex-wrap: wrap;
+
+        &:first-child {
+            margin-bottom: 100px;
+        }
+    }
+    .articles-row-container {
+        flex-basis: 50%;
+        order: 1;
+        padding: 0 10%;
+        position: relative;
+
+        img {
+            width: 80%;
+        }
+
+        .img-left {
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            box-shadow: v.$box-shadow-right;
+        }
+
+        .img-right {
+            position: absolute;
+            top: 0px;
+            right: 0;
+            box-shadow: v.$box-shadow-left;
+        }
+
+        .text-left {
+            text-align: right;
+        }
+    }
+
+    .flipped {
+        order: 2;
+    }
+}
