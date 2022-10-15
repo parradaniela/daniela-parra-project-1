@@ -1,3 +1,5 @@
+@use "./variables" as v;
+
 // Global headers 
 
 .global-header {
@@ -9,20 +11,20 @@
 .global-headings {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    
+    .logo {
+        margin: 20px 0 150px;
+    }
     
     h2 {
         margin-bottom: 60%;
     }
-    
-    .logo {
-        margin-bottom: 30%;
-    }
-    
-}
+} 
+
 
 .global-nav-ul {
     display: flex;
+    margin-top: 10px;
     
     li:not(:last-child) {
         margin-right: 15px;
@@ -37,11 +39,10 @@
 
 .home-header {
     background: url(../sanctuary-helpers-final-images/header-home.jpg) center /  cover;
-    min-height: 100vh;
+    height: 100vh;
 
     h1 {
         margin: 150px;
-        align-self: flex-end;
     }
     
     .rel-container {
@@ -51,7 +52,7 @@
             position: absolute;
             width: 100%;
             left: 0;
-            top: -40px;
+            bottom: -175px;
         }
     }
 }
@@ -68,4 +69,12 @@
 .blog-header {
     background: url(../sanctuary-helpers-final-images/blog-image.jpg) center / cover;
     height: 75vh;
+}
+
+// Global footers
+
+.global-footer {
+    background: v.$color-black;
+    color: v.$color-white;
+    text-align: center;
 }

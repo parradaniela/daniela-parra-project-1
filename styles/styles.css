@@ -367,21 +367,19 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+.global-headings .logo {
+  margin: 20px 0 150px;
 }
 .global-headings h2 {
   margin-bottom: 60%;
-}
-.global-headings .logo {
-  margin-bottom: 30%;
 }
 
 .global-nav-ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 10px;
 }
 .global-nav-ul li:not(:last-child) {
   margin-right: 15px;
@@ -392,12 +390,10 @@ img {
 
 .home-header {
   background: url(../sanctuary-helpers-final-images/header-home.jpg) center/cover;
-  min-height: 100vh;
+  height: 100vh;
 }
 .home-header h1 {
   margin: 150px;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
 }
 .home-header .rel-container {
   width: 55%;
@@ -406,7 +402,7 @@ img {
   position: absolute;
   width: 100%;
   left: 0;
-  top: -40px;
+  bottom: -175px;
 }
 
 .contact-header {
@@ -417,4 +413,10 @@ img {
 .blog-header {
   background: url(../sanctuary-helpers-final-images/blog-image.jpg) center/cover;
   height: 75vh;
+}
+
+.global-footer {
+  background: #151514;
+  color: #F5F5F5;
+  text-align: center;
 }
