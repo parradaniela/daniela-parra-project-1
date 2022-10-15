@@ -1,0 +1,15 @@
+@use '../global/variables' as v;
+
+.gallery {
+    background-color: v.$color-secondary-light;
+}
+
+.gallery-flex {
+    display: flex;
+    justify-content: space-between;
+
+    &-item {
+        flex-basis: 30%;
+    }
+}
+

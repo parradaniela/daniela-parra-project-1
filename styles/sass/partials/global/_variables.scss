@@ -14,9 +14,9 @@ $body-text: 'Lato', sans-serif;
 
 // Other
 
-$box-shadow: 20px 20px 0 0 $color-primary;
+$box-shadow-right: 20px 20px 0 0 $color-primary;
+$box-shadow-left: -20px 20px 0 0 $color-primary;
 
 //TODO: 
 
 // Variable for green border used in the forms
-// Variable for yellow border used in top nav .underline

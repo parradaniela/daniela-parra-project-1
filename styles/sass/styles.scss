@@ -7,7 +7,8 @@
 @use "./partials/global/headers-footers";
 
 // // Home page
-// @use "./partials/home/"; 
+@use "./partials/home/about"; 
+@use "./partials/home/gallery"; 
 
 // // Blog page
 // @use "./partials/blog/";
