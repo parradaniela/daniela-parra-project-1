@@ -78,6 +78,13 @@ img {
 .btn {
     background-color: v.$color-secondary-dark;
     padding: 15px 15px 10px;
+    transition: .3s;
+
+    &:hover, 
+    &:focus {
+        color: v.$color-white;
+        background-color: v.$color-black;
+    }
 }
 
 //TODO: 

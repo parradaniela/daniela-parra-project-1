@@ -371,6 +371,12 @@ img {
 .btn {
   background-color: #065635;
   padding: 15px 15px 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.btn:hover, .btn:focus {
+  color: #F5F5F5;
+  background-color: #151514;
 }
 
 .global-header {
@@ -410,6 +416,12 @@ img {
 }
 .global-nav-ul a {
   padding: 30px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.global-nav-ul a:hover, .global-nav-ul a:focus {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
 }
 
 .home-header {

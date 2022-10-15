@@ -32,6 +32,12 @@
 
     a {
         padding: 30px;
+        transition: .3s;
+
+        &:hover, 
+        &:focus {
+            transform: scale(1.4);
+        }
     }
 }
 
