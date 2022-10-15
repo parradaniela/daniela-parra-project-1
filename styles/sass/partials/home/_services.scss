@@ -1,0 +1,27 @@
+@use '../global/variables' as v;
+
+.services-flex {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+        flex-basis: 50%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.services-icon {
+    height: 60px;
+    flex-basis: 60px;
+    background-color: v.$color-primary;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-text {
+    flex-basis: 88%;
+}
