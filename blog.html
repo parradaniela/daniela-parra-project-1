@@ -35,8 +35,43 @@
     <main id="main-blog-content">
         <!-- Blog posts section -->
         <section class="blog-posts">
-            <article></article>
-            <aside></aside>
+            <article>
+                <!-- Image -->
+                <div class="blog-posts-img">
+                    <img src="./sanctuary-helpers-final-images/blog-post-image.jpg" alt="White room with colourful furniture including a blue couch with white cushions, light wood accent tables, and a painting of green chairs and a table with a vase holding a rose.">
+                </div>
+                <!-- Text -->
+                <div class="blog-posts-text">
+                    <h3>Finding the right pieces for new space</h3>
+                    <p class="italicized">Monday, October 5th, 2019 by Saron</p>
+                    <!-- Blog paragraphs -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas atque rerum quod impedit totam quis, voluptatibus dolorem similique nostrum quo minus eum magnam illum.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur laborum a deleniti. Doloribus saepe tempora cumque optio dicta. Eaque consequatur suscipit fuga praesentium fugit adipisci dicta ratione labore tempora distinctio!</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam sunt dignissimos error autem eum esse ducimus iusto fugiat nesciunt debitis minima non, harum, sapiente laudantium totam incidunt voluptatibus cupiditate aspernatur?
+                    Architecto, ab nemo deleniti harum expedita maxime repudiandae et sed aspernatur dignissimos optio ipsum veritatis corporis sunt! Eligendi nulla accusantium perferendis omnis voluptas repudiandae maxime, consectetur in pariatur saepe fuga?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum molestias incidunt, excepturi, error omnis iure numquam nesciunt fuga vitae, dicta culpa repudiandae!</p>
+                </div>
+            </article>
+            <aside class="blog-posts-aside">
+                <h3>Our Mission</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, perspiciatis expedita?</p>
+                <h3>Recent posts</h3>
+                <!-- aside list -->
+                <ul>
+                    <li>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+                    </li>
+                    <li>
+                        <p>Optio id excepturi magnam est itaque</p>
+                    </li>
+                    <li>
+                        <p>At perspiciatis quia vel quos accusamus iste aspernatur</p>
+                    </li>
+                    <li>
+                        <p>Voluptatem pariatur quam veniam quibusdam incidunt maiores</p>
+                    </li>
+                </ul>
+            </aside>
         </section>
 
         <!-- Comments section -->
@@ -68,17 +103,18 @@
                     </ul>
                 </div> <!-- END .blog-comments-display -->
     
-                <form action="#" class="blog-form">
+                <form action="#" class="form blog-form">
                     <fieldset>
                         <div>
                             <!-- Name field -->
-                            <input type="text" id="blog-form-name" name="blog" placeholder="Name" required>
+                            <input type="text" id="blog-form-name" name="comment" placeholder="Name" required>
                             <label for="blog-form-name" name="blog" class="sr-only">Name</label>
     
                             <!-- Email field -->
-                            <input type="email" id="blog-form-email" name="blog" placeholder="Email address" required>
+                            <input type="email" id="blog-form-email" name="comment" placeholder="Email address" required>
+                            <label for="blog-form-email" name="comment" class="sr-only">Email Address</label>
                         </div>
-                        <textarea name="blog" id="blog-form-textarea" cols="30" rows="10" placeholder="Message"></textarea>
+                        <textarea name="comment" id="blog-form-textarea" cols="30" rows="10" placeholder="Message"></textarea>
                         <button class="btn">Post comment</button>
                     </fieldset>
                 </form>
@@ -89,6 +125,5 @@
     <footer class="footer wrapper">
         <p>Copyright © 2019 HackerYou</p>
     </footer>
-    
 </body>
 </html>
