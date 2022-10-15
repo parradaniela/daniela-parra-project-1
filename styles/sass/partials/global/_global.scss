@@ -1,0 +1,48 @@
+@use './variables' as v;
+
+// Baseline styles
+
+h1, h2, h3, p, ul, li, input, label {margin: 0; padding: 0}
+
+a {text-decoration: none; display: inline-block;}
+
+li {list-style-type: none;}
+
+img {width: 100%; max-width: 100%; object-fit: cover;}
+
+
+// General classes
+
+.wrapper {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.rel-container {
+    position: relative;
+}
+
+.block-span {
+    display: block;
+}
+
+.underline {
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: '';
+        height: 3px;
+        left: 0;
+        right: 0;
+        bottom: 15px;
+        margin: 0 auto;
+        background: v.$color-primary;
+        width: 65%;
+    }
+}
+
+//TODO: 
+// Set .italicized style here
+// Set all button styles here

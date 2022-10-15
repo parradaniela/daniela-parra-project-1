@@ -1,0 +1,71 @@
+// Global headers 
+
+.global-header {
+    display: flex;
+    justify-content: space-between;
+    height: inherit;
+}
+
+.global-headings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    h2 {
+        margin-bottom: 60%;
+    }
+    
+    .logo {
+        margin-bottom: 30%;
+    }
+    
+}
+
+.global-nav-ul {
+    display: flex;
+    
+    li:not(:last-child) {
+        margin-right: 15px;
+    }
+
+    a {
+        padding: 30px;
+    }
+}
+
+// Home header
+
+.home-header {
+    background: url(../sanctuary-helpers-final-images/header-home.jpg) center /  cover;
+    min-height: 100vh;
+
+    h1 {
+        margin: 150px;
+        align-self: flex-end;
+    }
+    
+    .rel-container {
+        width: 55%;
+        
+        .home-header-img {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: -40px;
+        }
+    }
+}
+
+// Contact header
+
+.contact-header {
+    background: url(../sanctuary-helpers-final-images/contact-image.jpg) center / cover;
+    height: 75vh;
+} 
+
+// Blog header 
+
+.blog-header {
+    background: url(../sanctuary-helpers-final-images/blog-image.jpg) center / cover;
+    height: 75vh;
+}

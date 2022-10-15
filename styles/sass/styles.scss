@@ -3,11 +3,18 @@
 @use "./partials/global/setup";
 @use "./partials/global/variables";
 @use "./partials/global/typography";
-@use "./partials/global/base";
+@use "./partials/global/global";
+@use "./partials/global/headers-footers";
+
+// // Home page
+// @use "./partials/home/"; 
+
+// // Blog page
+// @use "./partials/blog/";
+
+// // Contact page
+// @use "./partials/contact/";
 
 
-
-
-
-
-@use "./partials/global/media";
+// // Media queries  
+// @use "./partials/global/media"; 

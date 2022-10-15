@@ -31,6 +31,7 @@ p {
 
 a {
     font-family: v.$body-text;
+    color: v.$color-black;
     font-weight: 700;
     text-align: center;
     @include font-styles(2rem, 2.9rem, 1.4px, uppercase);
@@ -43,6 +44,7 @@ a {
 
 .btn {
     font-family: v.$heading-filled;
+    color: v.$color-white;
     text-align: center;
     @include font-styles(2rem, 3.2rem, 1px, uppercase);
 }

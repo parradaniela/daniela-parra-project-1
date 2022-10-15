@@ -272,6 +272,7 @@ p {
 
 a {
   font-family: "Lato", sans-serif;
+  color: #151514;
   font-weight: 700;
   text-align: center;
   font-size: 2rem;
@@ -290,6 +291,7 @@ a {
 
 .btn {
   font-family: "Kumar One", cursive;
+  color: #F5F5F5;
   text-align: center;
   font-size: 2rem;
   line-height: 3.2rem;
@@ -312,6 +314,7 @@ li {
 }
 
 img {
+  width: 100%;
   max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -319,6 +322,99 @@ img {
 
 .wrapper {
   width: 90%;
-  max-width: 1260px;
+  max-width: 1400px;
   margin: 0 auto;
+}
+
+.rel-container {
+  position: relative;
+}
+
+.block-span {
+  display: block;
+}
+
+.underline {
+  position: relative;
+}
+.underline::after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  left: 0;
+  right: 0;
+  bottom: 15px;
+  margin: 0 auto;
+  background: #F8FB05;
+  width: 65%;
+}
+
+.global-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: inherit;
+}
+
+.global-headings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.global-headings h2 {
+  margin-bottom: 60%;
+}
+.global-headings .logo {
+  margin-bottom: 30%;
+}
+
+.global-nav-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.global-nav-ul li:not(:last-child) {
+  margin-right: 15px;
+}
+.global-nav-ul a {
+  padding: 30px;
+}
+
+.home-header {
+  background: url(../sanctuary-helpers-final-images/header-home.jpg) center/cover;
+  min-height: 100vh;
+}
+.home-header h1 {
+  margin: 150px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+.home-header .rel-container {
+  width: 55%;
+}
+.home-header .rel-container .home-header-img {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: -40px;
+}
+
+.contact-header {
+  background: url(../sanctuary-helpers-final-images/contact-image.jpg) center/cover;
+  height: 75vh;
+}
+
+.blog-header {
+  background: url(../sanctuary-helpers-final-images/blog-image.jpg) center/cover;
+  height: 75vh;
 }
