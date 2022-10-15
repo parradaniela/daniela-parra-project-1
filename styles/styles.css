@@ -444,6 +444,9 @@ img {
   color: #F5F5F5;
   text-align: center;
 }
+.global-footer p {
+  margin: 0;
+}
 
 .about-flex {
   margin-top: 10%;
@@ -575,4 +578,17 @@ img {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
+}
+
+.banner-img {
+  background: url(../sanctuary-helpers-final-images/banner-image.jpg) center/cover;
+  min-height: 60vh;
+}
+
+.search-text {
+  margin: 5% auto;
+  text-align: center;
+}
+.search-text p {
+  text-align: left;
 }

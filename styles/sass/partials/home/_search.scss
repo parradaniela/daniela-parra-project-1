@@ -1,0 +1,15 @@
+@use '../global/variables' as v;
+
+.banner-img {
+    background: url(../sanctuary-helpers-final-images/banner-image.jpg) center / cover;
+    min-height: 60vh;
+}
+
+.search-text {
+    margin: 5% auto;
+    text-align: center;
+    
+    p {
+        text-align: left;
+    }
+}
