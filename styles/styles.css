@@ -270,6 +270,15 @@ p {
   text-transform: capitalize;
 }
 
+input,
+textarea {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
 a {
   font-family: "Lato", sans-serif;
   color: #151514;
@@ -305,7 +314,8 @@ h3,
 ul,
 li,
 input,
-label {
+label,
+fieldset {
   margin: 0;
   padding: 0;
 }
@@ -329,6 +339,12 @@ img {
   max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+fieldset,
+input,
+textarea {
+  border: none;
 }
 
 .fa-solid {
@@ -458,6 +474,39 @@ img {
 }
 .global-footer p {
   margin: 0;
+}
+
+.global-form-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.global-form-inputs {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+input {
+  border-bottom: 2px solid #065635;
+  padding: 20px;
+  width: 45%;
+}
+
+textarea {
+  border: 2px solid #065635;
+  padding: 20px;
+  margin: 5% 0;
 }
 
 .about-flex {

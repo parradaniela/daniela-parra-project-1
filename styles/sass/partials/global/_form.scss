@@ -1,0 +1,30 @@
+@use '../global/variables' as v;
+
+// .form {
+//     background-color: v.$color-white;
+//     box-shadow: v.$box-shadow-right;
+// }
+
+.global-form-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.global-form-inputs {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    border-bottom: v.$border-form;
+    padding: 20px;
+    width: 45%;
+}
+
+textarea {
+    border: v.$border-form;
+    padding: 20px;
+    margin: 5% 0;
+}
+
