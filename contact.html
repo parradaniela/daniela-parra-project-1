@@ -37,58 +37,68 @@
     </header>
 
     <main id="main-contact-content">
-        <div class="wrapper rel-container">
-            <!-- Contact form section -->
-            <form action="#" class="contact-form">
-                <fieldset class="global-form-flex">
-                    <div class="global-form-inputs">
-                        <!-- Name field -->
-                        <input type="text" id="contact-form-name" name="contact" placeholder="Name" required>
-                        <label for="contact-form-name" name="contact" class="sr-only">Name</label>
-
-                        <!-- Email field -->
-                        <input type="email" id="contact-form-email" name="contact" placeholder="Email address" required>
-                        <label for="contact-form-name" name="contact" class="sr-only">Email Address</label>
-                    </div>
-                    <textarea name="contact" id="contact-form-textarea" cols="30" rows="10" placeholder="Message"></textarea>
-                    <button class="btn">Submit</button>
-                </fieldset>
-            </form>
-
-            <div class="contact-socials">
-                <!-- Socials navigation -->
-                <nav class="contact-socials-nav">
-                    <ul>
-                        <!-- Facebook -->
+        <section class="contact-main section-padding">
+            <div class="wrapper contact-container">
+                <!-- Contact form section -->
+                <div class="rel-container">
+                    <form action="#" class="contact-form">
+                        <fieldset class="global-form-flex">
+                            <div class="global-form-inputs">
+                                <!-- Name field -->
+                                <input type="text" id="contact-form-name" name="contact" placeholder="Name" required>
+                                <label for="contact-form-name" name="contact" class="sr-only">Name</label>
+        
+                                <!-- Email field -->
+                                <input type="email" id="contact-form-email" name="contact" placeholder="Email address" required>
+                                <label for="contact-form-name" name="contact" class="sr-only">Email Address</label>
+                            </div>
+                            <textarea name="contact" id="contact-form-textarea" cols="30" rows="10" placeholder="Message"></textarea>
+                            <button class="btn">Submit</button>
+                        </fieldset>
+                    </form>
+                </div> <!-- END .rel-container -->
+    
+                <div class="contact-socials">
+                    <!-- Socials navigation -->
+                    <nav class="contact-socials-nav">
+                        <ul>
+                            <!-- Facebook -->
+                            <li>
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            </li>
+                            <!-- Instagram -->
+                            <li>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a></i>
+                            </li>
+                            <!-- Twitter -->
+                            <li>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a></i>
+                            </li>
+                            <!-- Whatsapp -->
+                            <li>
+                                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
+    
+                    <!-- Contact info -->
+                    <ul class="contact-socials-text">
                         <li>
-                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <p class="lowercase">info@email.com</p>
                         </li>
-                        <!-- Instagram -->
                         <li>
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a></i>
-                        </li>
-                        <!-- Twitter -->
-                        <li>
-                            <a href="#"><i class="fa-brands fa-twitter"></i></a></i>
-                        </li>
-                        <!-- Whatsapp -->
-                        <li>
-                            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                            <p>
+                                <span class="block-span">123 - 456 - 7890</span>
+                                <span class="block-span">123 Queen Street West,</span>
+                                <span class="block-span">Unit 10</span>
+                                <span class="block-span">Toronto, Ontario</span>
+                                <span class="block-span">M5V2D5</span>
+                            </p>
                         </li>
                     </ul>
-                </nav>
-
-                <!-- Contact info -->
-                <ul class="contact-socials-text">
-                    <li><p>info@email.com</p></li>
-                    <li><p>123 - 456 - 7890</p></li>
-                    <li><p>123 Queen Street West,</p></li>
-                    <li><p>Unit 10</p></li>
-                    <li><p>Toronto, Ontario</p></li>
-                    <li><p>M5V2D5</p></li>
-                </ul>
-            </div> <!-- END .contact-socials-->
-        </div> <!-- END .wrapper-->
+                </div> <!-- END .contact-socials-->
+            </div> <!-- END .contact-container .wrapper-->
+        </section>
     </main>
     <footer class="global-footer">
         <p>Copyright © 2019 HackerYou</p>

@@ -1,0 +1,59 @@
+@use '../global/variables' as v;
+
+.contact-main {
+    background-color: v.$color-secondary-light;
+    height: 65vh;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+
+    .rel-container {
+        width: 75%;
+    }
+    
+}
+
+// Contact form
+
+
+.contact-form {
+    background-color: v.$color-white;
+    box-shadow: v.$box-shadow-right;
+    width: 100%;
+    padding: 50px;
+    position: absolute;
+    bottom: -35%;
+    left: 0;
+}
+
+// Contact socials nav
+
+
+.contact-socials {
+    width: 20%;
+
+    &-nav ul {
+        display: flex;
+    
+        a {
+            padding: 10px;
+            margin-right: 15px;
+            color: v.$color-secondary-dark;
+            transition: .3s;
+    
+            &:first-child {
+                padding-left: 0;
+            }
+    
+            &:hover, 
+            &:focus {
+                color: v.$color-black;
+                transform: scale(1.4);
+            }
+        }
+    }
+}
+
+

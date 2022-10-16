@@ -320,18 +320,16 @@ fieldset {
   padding: 0;
 }
 
-p {
-  margin: 20px 0;
-  padding: 0;
+fieldset,
+input,
+textarea {
+  border: none;
+  background-color: #F5F5F5;
 }
 
 a {
   text-decoration: none;
   display: inline-block;
-}
-
-li {
-  list-style-type: none;
 }
 
 img {
@@ -341,32 +339,57 @@ img {
      object-fit: cover;
 }
 
-fieldset,
-input,
+li {
+  list-style-type: none;
+}
+
+p {
+  margin: 20px 0;
+  padding: 0;
+}
+
 textarea {
-  border: none;
+  resize: none;
 }
 
 .fa-solid {
   font-size: 3rem;
 }
 
-.wrapper {
-  width: 90%;
-  max-width: 1400px;
-  margin: 0 auto;
+.fa-brands {
+  font-size: 2.5rem;
 }
 
-.section-padding {
-  padding: 5% 0;
+.block-span {
+  display: block;
+}
+
+.btn {
+  background-color: #065635;
+  padding: 15px 15px 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: none;
+}
+.btn:hover, .btn:focus {
+  color: #F5F5F5;
+  background-color: #151514;
+}
+
+.italicize {
+  font-style: italic;
+}
+
+.lowercase {
+  text-transform: lowercase;
 }
 
 .rel-container {
   position: relative;
 }
 
-.block-span {
-  display: block;
+.section-padding {
+  padding: 5% 0;
 }
 
 .underline {
@@ -384,15 +407,10 @@ textarea {
   width: 65%;
 }
 
-.btn {
-  background-color: #065635;
-  padding: 15px 15px 10px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-.btn:hover, .btn:focus {
-  color: #F5F5F5;
-  background-color: #151514;
+.wrapper {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .global-header {
@@ -652,4 +670,56 @@ textarea {
 }
 .search-text p {
   text-align: left;
+}
+
+.contact-main {
+  background-color: #E0FDDF;
+  height: 65vh;
+}
+
+.contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contact-container .rel-container {
+  width: 75%;
+}
+
+.contact-form {
+  background-color: #F5F5F5;
+  -webkit-box-shadow: 20px 20px 0 0 #F8FB05;
+          box-shadow: 20px 20px 0 0 #F8FB05;
+  width: 100%;
+  padding: 50px;
+  position: absolute;
+  bottom: -35%;
+  left: 0;
+}
+
+.contact-socials {
+  width: 20%;
+}
+.contact-socials-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contact-socials-nav ul a {
+  padding: 10px;
+  margin-right: 15px;
+  color: #065635;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.contact-socials-nav ul a:first-child {
+  padding-left: 0;
+}
+.contact-socials-nav ul a:hover, .contact-socials-nav ul a:focus {
+  color: #151514;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
 }
