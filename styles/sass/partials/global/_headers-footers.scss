@@ -21,8 +21,7 @@
     }
 } 
 
-
-.global-nav-ul {
+.global-header-nav {
     display: flex;
     margin-top: 10px;
     
@@ -39,9 +38,9 @@
             transform: scale(1.4);
         }
     }
-}
+} 
 
-// Home header
+// Home page header
 
 .home-header {
     background: url(../sanctuary-helpers-final-images/header-home.jpg) center /  cover;

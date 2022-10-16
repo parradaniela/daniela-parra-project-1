@@ -1,16 +1,5 @@
 @use '../global/variables' as v;
 
-.global-form-flex {
-    display: flex;
-    flex-direction: column;
-}
-
-.global-form-inputs {
-    flex-basis: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
 input {
     border-bottom: v.$border-form;
     padding: 20px;
@@ -22,4 +11,15 @@ textarea {
     padding: 20px;
     margin: 5% 0;
 }
+.global-form-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.global-form-inputs {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
 
