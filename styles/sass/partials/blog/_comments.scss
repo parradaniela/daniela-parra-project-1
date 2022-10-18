@@ -1,0 +1,39 @@
+@use '../global/variables' as v;
+
+// Comment list
+
+h5 {
+    margin-bottom: 20px;
+}
+
+.blog-comments {
+    background-color: v.$color-secondary-light;
+
+    &-display {
+        margin: 5% 0;
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 30px;
+
+            .blog-comments-img {
+                flex-basis: 8%;
+            }
+
+            .blog-comments-text {
+                flex-basis: 85%;;
+            }
+        }
+    }
+}
+
+// Comment form
+
+.blog-form {
+    width: 65%;
+}

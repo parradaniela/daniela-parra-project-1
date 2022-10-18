@@ -4,7 +4,7 @@
     background-color: v.$color-secondary-light;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30%;
+    padding-bottom: 25%;
 
     .rel-container {
         flex-basis: 65%;
@@ -17,7 +17,7 @@
         border-bottom: 5px solid v.$color-primary;
         position: absolute;
         left: 0;
-        top: -25%;
+        top: -30%;
         
         .article-img {
             box-shadow: v.$box-shadow-right;
@@ -37,7 +37,6 @@
         background-color: v.$color-primary;
 
         .aside-img {
-            // box-shadow: v.$box-shadow-left;
             width: calc(100% - 20px); 
             position: absolute;
             right: 0;
