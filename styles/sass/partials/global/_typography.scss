@@ -30,7 +30,8 @@ h4 {
 //TODO: style h4
 
 p,
-.paragraph-text {
+.paragraph-text,
+h5 {
     font-family: v.$body-text;
     @include font-styles(2rem, 3.2rem, 2px, none);
 }
