@@ -1,0 +1,58 @@
+@use '../global/variables' as v;
+
+.blog-post {
+    background-color: v.$color-secondary-light;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30%;
+
+    .rel-container {
+        flex-basis: 65%;
+    }
+    
+    &-article {
+        background-color: v.$color-white;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 5px solid v.$color-primary;
+        position: absolute;
+        left: 0;
+        top: -25%;
+        
+        .article-img {
+            box-shadow: v.$box-shadow-right;
+            width: calc(100% - 20px); 
+        }
+        
+        .article-text {
+            margin-left: 10%;
+            padding: 10% 5% 10% 0;
+            border-right: 5px solid v.$color-primary;
+            
+        }
+    }
+
+    &-aside {
+        flex-basis: 25%;
+        background-color: v.$color-primary;
+
+        .aside-img {
+            // box-shadow: v.$box-shadow-left;
+            width: calc(100% - 20px); 
+            position: absolute;
+            right: 0;
+            top: -20px;
+        }
+
+        .aside-text {
+            padding: 110% 0 10%;
+            border-left: 20px solid v.$color-primary;
+
+            li {
+                list-style: disc;
+                list-style-position: inside;
+                font-size: 2rem;
+            } 
+        }
+    }
+}

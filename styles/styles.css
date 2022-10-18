@@ -262,12 +262,21 @@ h3 {
   text-transform: uppercase;
 }
 
-p {
+h4 {
+  font-family: "Kumar One", cursive;
+  font-size: 2.7rem;
+  line-height: 3rem;
+  letter-spacing: 2.1px;
+  text-transform: uppercase;
+}
+
+p,
+.paragraph-text {
   font-family: "Lato", sans-serif;
   font-size: 2rem;
   line-height: 3.2rem;
   letter-spacing: 2px;
-  text-transform: capitalize;
+  text-transform: none;
 }
 
 input,
@@ -337,6 +346,7 @@ img {
   max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  display: block;
 }
 
 li {
@@ -670,6 +680,65 @@ textarea {
 }
 .search-text p {
   text-align: left;
+}
+
+.blog-post {
+  background-color: #E0FDDF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30%;
+}
+.blog-post .rel-container {
+  -ms-flex-preferred-size: 65%;
+      flex-basis: 65%;
+}
+.blog-post-article {
+  background-color: #F5F5F5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-bottom: 5px solid #F8FB05;
+  position: absolute;
+  left: 0;
+  top: -25%;
+}
+.blog-post-article .article-img {
+  -webkit-box-shadow: 20px 20px 0 0 #F8FB05;
+          box-shadow: 20px 20px 0 0 #F8FB05;
+  width: calc(100% - 20px);
+}
+.blog-post-article .article-text {
+  margin-left: 10%;
+  padding: 10% 5% 10% 0;
+  border-right: 5px solid #F8FB05;
+}
+.blog-post-aside {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  background-color: #F8FB05;
+}
+.blog-post-aside .aside-img {
+  width: calc(100% - 20px);
+  position: absolute;
+  right: 0;
+  top: -20px;
+}
+.blog-post-aside .aside-text {
+  padding: 110% 0 10%;
+  border-left: 20px solid #F8FB05;
+}
+.blog-post-aside .aside-text li {
+  list-style: disc;
+  list-style-position: inside;
+  font-size: 2rem;
 }
 
 .contact-main {
