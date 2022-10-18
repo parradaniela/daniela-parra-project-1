@@ -265,14 +265,21 @@ h3 {
 h4 {
   font-family: "Kumar One", cursive;
   font-size: 2.7rem;
-  line-height: 3rem;
+  line-height: 3.2rem;
   letter-spacing: 2.1px;
   text-transform: uppercase;
 }
 
-p,
-.paragraph-text,
 h5 {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+p,
+.paragraph-text {
   font-family: "Lato", sans-serif;
   font-size: 2rem;
   line-height: 3.2rem;
@@ -380,6 +387,7 @@ textarea {
 .btn {
   background-color: #065635;
   padding: 15px 15px 10px;
+  margin: 20px 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   border: none;
@@ -735,7 +743,7 @@ textarea {
   top: -20px;
 }
 .blog-post-aside .aside-text {
-  padding: 110% 0 10%;
+  padding: 115% 0 10%;
   border-left: 20px solid #F8FB05;
 }
 .blog-post-aside .aside-text li {
