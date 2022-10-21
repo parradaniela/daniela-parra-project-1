@@ -482,6 +482,8 @@ textarea {
 .home-header {
   background: url(../sanctuary-helpers-final-images/header-home.jpg) center/cover;
   height: 100vh;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .home-header h1 {
   margin: 150px;
@@ -596,6 +598,9 @@ textarea {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .services-flex li {
   -ms-flex-preferred-size: 50%;
@@ -606,6 +611,8 @@ textarea {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .services .services-icon {
   height: 60px;
@@ -614,6 +621,7 @@ textarea {
   background-color: #F8FB05;
   border-radius: 50%;
   padding: 10px;
+  margin-right: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -623,6 +631,8 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .services .services-text {
   -ms-flex-preferred-size: 88%;
@@ -906,5 +916,32 @@ h5 {
             box-shadow: none;
     border-bottom: 20px solid #F8FB05;
     border-left: 20px solid #F8FB05;
+  }
+}
+@media (max-width: 1215px) {
+  .home-header .rel-container .home-header-img {
+    bottom: -30px;
+  }
+  .about-flex {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-flex-text {
+    -ms-flex-preferred-size: 65%;
+        flex-basis: 65%;
+    margin-right: 60px;
+  }
+  .services-flex li {
+    -ms-flex-preferred-size: 47%;
+        flex-basis: 47%;
+  }
+}
+@media (max-width: 1120px) {
+  .home-header {
+    background-position: right;
+  }
+  .home-header .rel-container .home-header-img {
+    display: none;
   }
 }

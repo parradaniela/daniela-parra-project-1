@@ -70,3 +70,45 @@
     }
 
 }
+
+@media (max-width: 1215px) {
+
+    // Home page header
+    
+    // TODO: The nav starts to break here - convert to button or reduce space between each anchor?
+    
+    .home-header .rel-container .home-header-img{
+        bottom: -30px;
+    }
+
+    // Home page about section
+
+    .about-flex {
+        align-items: center;
+
+        &-text {
+            flex-basis: 65%;
+            margin-right: 60px;
+        }
+    }
+
+    // Home page services section 
+    .services-flex li {
+        flex-basis: 47%;
+    }
+    
+}
+
+@media (max-width: 1120px) {
+    .home-header {
+        background-position: right;
+
+        .rel-container .home-header-img {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    // About image and article images
+}
