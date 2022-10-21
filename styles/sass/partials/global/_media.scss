@@ -110,5 +110,37 @@
 }
 
 @media (max-width: 1024px) {
-    // About image and article images
+    // Home page About section
+    .about-flex {
+        flex-direction: column-reverse;
+        margin-top: 0;
+    
+        &-text {
+            margin-top: 7%;
+            flex-basis: 100%;
+            text-align: center;
+        }
+
+        &-img {
+            width: 45%;  
+        }
+    }   
+
+    // Home page Gallery section 
+    .gallery-flex {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &-item {
+            flex-basis: 45%;
+            margin: 2%;
+
+        }
+    }
+
+    // Home page Articles section
+    .articles-row-container {
+        padding: 2%;
+    }
 }
+    
