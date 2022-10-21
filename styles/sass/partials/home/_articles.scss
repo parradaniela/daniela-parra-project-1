@@ -13,14 +13,16 @@
             margin-bottom: 100px;
         }
     }
-    .articles-row-container {
+    &-row-container {
         flex-basis: 50%;
         order: 1;
         padding: 0 10%;
         position: relative;
+        transition: .3s;
 
         img {
             width: 80%;
+            transition: .3s;
         }
 
         .img-left {

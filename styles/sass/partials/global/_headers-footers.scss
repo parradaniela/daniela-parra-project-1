@@ -48,6 +48,7 @@
 
     h1 {
         margin: 150px;
+        transition: all .3s;
     }
     
     .rel-container {
@@ -57,7 +58,8 @@
             position: absolute;
             width: 100%;
             left: 0;
-            bottom: -175px;
+            bottom: -150px;
+            transition: .3s;
         }
     }
 }
