@@ -18,11 +18,10 @@
         order: 1;
         padding: 0 10%;
         position: relative;
-        transition: .3s;
+        @include v.transition-timing;
 
         img {
             width: 80%;
-            transition: .3s;
         }
 
         .img-left {
