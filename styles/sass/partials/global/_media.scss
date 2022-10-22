@@ -73,6 +73,10 @@
 }
 
 @media (max-width: 1215px) {
+    // GLobal styles
+    h4 {
+        margin: 20px 0;
+    }
 
     // Home page header
     
@@ -96,6 +100,72 @@
     // Home page services section 
     .services-flex li {
         flex-basis: 47%;
+    }
+
+    // Blog page header
+    .blog-header {
+        height: 60vh;
+    }
+
+    // Blog page main 
+    .blog-post {
+        flex-direction: column-reverse;
+
+        &.section-padding {
+            padding: 0;
+        }
+
+        &-article {
+            position: static;
+            
+            .article-img {
+                align-self: center;
+                width: 100%;
+                box-shadow: none;
+                border-bottom: 20px solid v.$color-primary;
+            }
+            
+            .article-text {
+                border: none;
+                margin: 5%;
+                padding: 0;
+            }
+        }
+
+
+    // Blog page Aside     
+        &-aside {
+            display: flex;
+            height: 40vh;
+
+            .aside-img {
+                position: static;
+                border: none;
+            }
+
+            .aside-text {
+                padding: 10px 0;
+                border: none;
+                display: flex;
+                align-items: center;
+
+                div {
+                    flex-basis: 50%;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+
+    // Blog page Comments section
+    .blog-comments-display {
+        margin: 3% 0;
+        width: 100%;
+    }
+
+    // BLog page Comment form section
+    .blog-form {
+        width: 100%;
     }
 
     // Contact page header

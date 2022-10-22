@@ -1,5 +1,7 @@
 @use '../global/variables' as v;
 
+// Blog post
+
 .blog-post {
     background-color: v.$color-secondary-light;
     display: flex;
@@ -32,6 +34,7 @@
         }
     }
 
+    // Blog post aside
     &-aside {
         flex-basis: 25%;
         background-color: v.$color-primary;
