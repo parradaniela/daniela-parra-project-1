@@ -45,11 +45,11 @@
 .home-header {
     background: url(../sanctuary-helpers-final-images/header-home.jpg) center /  cover;
     height: 100vh;
-    transition: .3s;
+    @include v.transition-timing;
 
     h1 {
         margin: 150px;
-        transition: all .3s;
+        @include v.transition-timing;
     }
     
     .rel-container {
@@ -60,7 +60,7 @@
             width: 100%;
             left: 0;
             bottom: -150px;
-            transition: .3s;
+            @include v.transition-timing;
         }
     }
 }
@@ -70,6 +70,7 @@
 .contact-header {
     background: url(../sanctuary-helpers-final-images/contact-image.jpg) center / cover;
     height: 75vh;
+    @include v.transition-timing;
 } 
 
 // Blog header 
@@ -77,6 +78,7 @@
 .blog-header {
     background: url(../sanctuary-helpers-final-images/blog-image.jpg) center / cover;
     height: 75vh;
+    @include v.transition-timing;
 }
 
 // Global footers

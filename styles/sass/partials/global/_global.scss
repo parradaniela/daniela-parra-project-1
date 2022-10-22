@@ -9,11 +9,14 @@ h4,
 h5,
 ul, 
 li, 
+p,
 input, 
 label,
-fieldset {
+fieldset,
+textarea {
     margin: 0; 
     padding: 0;
+    @include v.transition-timing;
 }
 
 fieldset,
@@ -26,7 +29,7 @@ textarea {
 a {
     text-decoration: none; 
     display: inline-block;
-    transition: .3s;
+    @include v.transition-timing;
 }
 
 img {
@@ -42,7 +45,6 @@ li {
 
 p {
     margin: 20px 0;
-    padding: 0;
 }
 
 textarea {
@@ -59,8 +61,8 @@ textarea {
     background-color: v.$color-secondary-dark;
     padding: 15px 15px 10px;
     margin: 20px 0;
-    transition: .3s;
     border: none;
+    @include v.transition-timing;
 
     &:hover, 
     &:focus {

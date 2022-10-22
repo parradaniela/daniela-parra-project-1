@@ -19,6 +19,10 @@ $box-shadow-left: -20px 20px 0 0 $color-primary;
 $border-img: 20px solid $color-primary;
 $border-form: 2px solid $color-secondary-dark;
 
+@mixin transition-timing {
+    transition: all .3s;
+}
+
 // Other potential variables
 // Lots of padding or margins around the site
 // The scale(1.4) used on hover for global nav and contact social icons
