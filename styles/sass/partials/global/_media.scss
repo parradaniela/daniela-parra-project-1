@@ -219,7 +219,7 @@
 @media (max-width: 650px) {
     // Home page About section
     .about-flex-img {
-        width: 85%;
+        // width: 85%;
     }
 
     // Home page Gallery section
@@ -228,4 +228,43 @@
     } 
 }
 
-// TODO: Maybe at 580px - reduce the size of the home page h1, h3s. Shrink size of icons in services section or at least reduce the margin between them and the text. Add text-align center to the articles text  
+@media (max-width: 580px) {
+    // Typography
+    h1 {
+        font-size: 4rem;
+    }
+
+    h3 {
+        font-size: 2.8rem;
+        line-height: 5rem;
+    }
+
+    // Global styles
+    .fa-solid {
+        font-size: 2rem;
+    }
+
+    // Home page header
+    .home-header {
+        background-position: 60%;
+    }
+
+    // Home page Services section
+    .services .services-icon {
+        height: 40px;
+        flex-basis: 40px;
+        padding: 7px;
+    }
+
+    // Home page Articles section
+    .articles-row-container,
+    .articles-row-container .text-left {
+        text-align: center;
+    }
+
+    // Home page Search section
+    .search .wrapper {
+        margin: 0 auto;
+    }
+}
+

@@ -707,8 +707,11 @@ textarea {
   min-height: 60vh;
 }
 
-.search-text {
+.search .wrapper {
   margin: 5% auto;
+}
+
+.search-text {
   text-align: center;
 }
 .search-text p {
@@ -1038,11 +1041,36 @@ h5 {
   }
 }
 @media (max-width: 650px) {
-  .about-flex-img {
-    width: 85%;
-  }
   .gallery-flex-item {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+}
+@media (max-width: 580px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 2.8rem;
+    line-height: 5rem;
+  }
+  .fa-solid {
+    font-size: 2rem;
+  }
+  .home-header {
+    background-position: 60%;
+  }
+  .services .services-icon {
+    height: 40px;
+    -ms-flex-preferred-size: 40px;
+        flex-basis: 40px;
+    padding: 7px;
+  }
+  .articles-row-container,
+.articles-row-container .text-left {
+    text-align: center;
+  }
+  .search .wrapper {
+    margin: 0 auto;
   }
 }
