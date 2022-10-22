@@ -325,6 +325,14 @@ a {
   text-transform: uppercase;
 }
 
+.fa-solid {
+  font-size: 3rem;
+}
+
+.fa-brands {
+  font-size: 2.5rem;
+}
+
 h1,
 h2,
 h3,
@@ -372,14 +380,6 @@ p {
 
 textarea {
   resize: none;
-}
-
-.fa-solid {
-  font-size: 3rem;
-}
-
-.fa-brands {
-  font-size: 2.5rem;
 }
 
 .block-span {
@@ -533,6 +533,7 @@ textarea {
   border: 2px solid #065635;
   padding: 20px;
   margin: 5% 0;
+  height: 40vh;
 }
 
 .global-form-flex {
@@ -554,6 +555,8 @@ textarea {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .about-flex {
@@ -834,7 +837,8 @@ h5 {
           justify-content: space-between;
 }
 .contact-container .rel-container {
-  width: 75%;
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
 }
 
 .contact-form {
@@ -945,6 +949,40 @@ h5 {
     -ms-flex-preferred-size: 47%;
         flex-basis: 47%;
   }
+  .contact-header {
+    height: 50vh;
+  }
+  .contact-main {
+    height: auto;
+  }
+  .contact-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-container .rel-container {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .contact-form {
+    position: static;
+  }
+  .contact-socials {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 5%;
+  }
+  .contact-socials-text p.lowercase {
+    margin-top: 0;
+  }
 }
 @media (max-width: 1120px) {
   .home-header {
@@ -1011,6 +1049,12 @@ h5 {
   }
 }
 @media (max-width: 855px) {
+  input {
+    width: 100%;
+  }
+  textarea {
+    margin-top: 7%;
+  }
   .gallery-flex-item {
     -ms-flex-preferred-size: 70%;
         flex-basis: 70%;
@@ -1024,6 +1068,15 @@ h5 {
   }
   .services-flex li:not(:last-child) {
     margin-bottom: 3%;
+  }
+  .contact-header {
+    height: 40vh;
+  }
+  .contact-form {
+    padding: 30px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-bottom: 20px solid #F8FB05;
   }
 }
 @media (max-width: 768px) {
@@ -1041,9 +1094,15 @@ h5 {
   }
 }
 @media (max-width: 650px) {
+  textarea {
+    margin-top: 10%;
+  }
   .gallery-flex-item {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+  .contact-header {
+    background-position: 55%;
   }
 }
 @media (max-width: 580px) {
@@ -1072,5 +1131,24 @@ h5 {
   }
   .search .wrapper {
     margin: 0 auto;
+  }
+}
+@media (max-width: 494px) {
+  .contact-socials {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (max-width: 415px) {
+  input,
+textarea {
+    padding: 5px;
+  }
+  .contact-form {
+    padding: 0;
+    background-color: #E0FDDF;
+    border: none;
   }
 }

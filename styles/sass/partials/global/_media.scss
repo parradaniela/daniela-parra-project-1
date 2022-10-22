@@ -97,10 +97,45 @@
     .services-flex li {
         flex-basis: 47%;
     }
+
+    // Contact page header
+    .contact-header {
+        height: 50vh;
+    }
+
+    .contact-main {
+        height: auto;
+    }
+
+    // Contact page form
+    .contact-container {
+        flex-direction: column;
+
+        .rel-container {
+            flex-basis: 100%;
+        }
+    }
+
+    .contact-form {
+        position: static;
+    }
+
+    // Contact page Socials navigation
+    .contact-socials {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 5%;
     
+        &-text p.lowercase {
+            margin-top: 0;
+        }
+    }
 }
 
 @media (max-width: 1120px) {
+    // Home page header
     .home-header {
         background-position: 80%;
 
@@ -175,6 +210,16 @@
 }
 
 @media (max-width: 855px) {
+    // Global styles
+
+    input {
+        width: 100%;
+    }
+
+    textarea {
+        margin-top: 7%;
+    }
+
     //Home page Gallery section
     .gallery-flex-item {
         flex-basis: 70%;
@@ -192,10 +237,22 @@
             }
         }
     }
+
+    // Contact page header
+    .contact-header {
+        height: 40vh;
+    }
+
+    // Contact page form 
+    .contact-form {
+        padding: 30px;
+        box-shadow: none;
+        border-bottom: 20px solid v.$color-primary;
+    }
 }      
 
 @media (max-width: 768px) {
-    // Global style
+    // Global styles
     .btn {
         width: 100%;
     }
@@ -217,15 +274,20 @@
 }
 
 @media (max-width: 650px) {
-    // Home page About section
-    .about-flex-img {
-        // width: 85%;
+    // Global styles
+    textarea {
+        margin-top: 10%;
     }
 
     // Home page Gallery section
     .gallery-flex-item {
         flex-basis: 100%;
     } 
+
+    // Contage page header
+    .contact-header {
+        background-position: 55%;
+    }
 }
 
 @media (max-width: 580px) {
@@ -239,7 +301,6 @@
         line-height: 5rem;
     }
 
-    // Global styles
     .fa-solid {
         font-size: 2rem;
     }
@@ -268,3 +329,25 @@
     }
 }
 
+@media (max-width: 494px) {
+    // Contact page socials
+    .contact-socials {
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 415px) {
+    // Global styles
+    input,
+    textarea {
+        padding: 5px;
+    }
+
+    //Contact page form
+    .contact-form {
+        padding: 0;
+        background-color: v.$color-secondary-light;
+        border: none;
+    }
+}

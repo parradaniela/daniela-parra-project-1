@@ -63,3 +63,12 @@ a {
     text-align: center;
     @include font-styles(2rem, 3.2rem, 1px, uppercase);
 }
+
+// Font awesome icon sizing
+.fa-solid {
+    font-size: 3rem;
+}
+
+.fa-brands {
+    font-size: 2.5rem;
+}
