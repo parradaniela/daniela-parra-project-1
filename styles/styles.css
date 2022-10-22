@@ -947,7 +947,7 @@ h5 {
         flex-basis: 47%;
   }
   .blog-header {
-    height: 60vh;
+    height: 50vh;
   }
   .blog-post {
     -webkit-box-orient: vertical;
@@ -1146,9 +1146,6 @@ h5 {
   .services-flex li:not(:last-child) {
     margin-bottom: 3%;
   }
-  .contact-header {
-    height: 40vh;
-  }
   .contact-form {
     padding: 30px;
     -webkit-box-shadow: none;
@@ -1170,7 +1167,6 @@ h5 {
     text-align: center;
   }
   .blog-header {
-    height: 50vh;
     background-position: 20%;
   }
   .blog-comments-display li {
@@ -1198,6 +1194,9 @@ h5 {
   }
 }
 @media (max-width: 650px) {
+  .global-headings .logo {
+    margin: 20px 0 100px;
+  }
   textarea {
     margin-top: 8%;
   }
@@ -1249,6 +1248,9 @@ h5 {
   }
 }
 @media (max-width: 415px) {
+  .global-headings .logo {
+    margin-bottom: 50px;
+  }
   input,
 textarea {
     padding: 5px;
