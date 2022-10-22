@@ -73,11 +73,6 @@
 }
 
 @media (max-width: 1215px) {
-    // GLobal styles
-    h4 {
-        margin: 20px 0;
-    }
-
     // Home page header
     
     // TODO: The nav starts to break here - convert to button or reduce space between each anchor?
@@ -144,14 +139,17 @@
             }
 
             .aside-text {
-                padding: 10px 0;
+                padding: 50px 0 0;
                 border: none;
                 display: flex;
                 align-items: center;
 
-                div {
+                &-container {
                     flex-basis: 50%;
-                    padding: 10px;
+                    height: 100%;
+                    padding: 0 20px;
+                    display: flex;
+                    flex-direction: column;
                 }
             }
         }
@@ -206,11 +204,21 @@
 
 @media (max-width: 1120px) {
     // Home page header
+
     .home-header {
         background-position: 80%;
 
         .rel-container .home-header-img {
             display: none;
+        }
+    }
+
+    // Blog page Aside 
+    .blog-post-aside .aside-text-container {
+        padding: 0;
+
+        p {
+            margin: 0;
         }
     }
 }
@@ -277,6 +285,15 @@
     .banner-img {
         min-height: 50vh;
     }    
+
+    // Blog page Aside section
+    .blog-post-aside .rel-container {
+        display: none;
+    }
+
+    .blog-post-aside .aside-text {
+        padding: 5%;
+    }
 }
 
 @media (max-width: 855px) {
@@ -341,12 +358,39 @@
     .search-text p {
         text-align: center;
     }
+
+    // Blog page header
+    .blog-header {
+        height: 50vh;
+        background-position: 20%;
+    }
+
+    // Blog page Comments section
+    .blog-comments-display li {
+        flex-direction: column;
+
+        .blog-comments-text {
+            margin-top: 20px;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    // Blog post Aside section
+    .blog-post-aside .aside-text {
+        flex-direction: column;
+        align-items: flex-start;
+
+        &-container:last-child {
+            margin-top: 20px;
+        }
+    }
 }
 
 @media (max-width: 650px) {
     // Global styles
     textarea {
-        margin-top: 10%;
+        margin-top: 8%;
     }
 
     // Home page Gallery section
@@ -400,6 +444,12 @@
 }
 
 @media (max-width: 494px) {
+    // Blog page header 
+    .blog-header {
+        background-position: 35%;
+    }
+
+
     // Contact page socials
     .contact-socials {
         text-align: center;
@@ -413,6 +463,15 @@
     textarea {
         padding: 5px;
     }
+
+    .btn {
+        padding: 15px 0;
+    }
+
+    .wrapper {
+        width: 95%;
+    }
+
 
     //Contact page form
     .contact-form {
