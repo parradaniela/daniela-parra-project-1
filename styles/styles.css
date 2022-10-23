@@ -1238,7 +1238,8 @@ h5 {
   }
 }
 @media (max-width: 580px) {
-  h1 {
+  h1,
+h2 {
     font-size: 4rem;
   }
   h3 {
@@ -1253,7 +1254,7 @@ p {
     font-size: 2rem;
   }
   .global-headings .logo {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
   .home-header {
     background-position: 60%;
