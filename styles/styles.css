@@ -750,7 +750,7 @@ textarea {
   border-bottom: 5px solid #F8FB05;
   position: absolute;
   left: 0;
-  top: -30%;
+  top: -20%;
 }
 .blog-post-article .article-img {
   -webkit-box-shadow: 20px 20px 0 0 #F8FB05;
@@ -828,7 +828,7 @@ h5 {
 
 .contact-main {
   background-color: #E0FDDF;
-  height: 65vh;
+  padding-bottom: 15%;
 }
 
 .contact-container {
