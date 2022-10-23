@@ -434,7 +434,8 @@
 
 @media (max-width: 580px) {
     // Typography
-    h1 {
+    h1,
+    h2 {
         font-size: 4rem;
     }
 
@@ -454,7 +455,7 @@
 
     // Global header
     .global-headings .logo {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 
 
