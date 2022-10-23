@@ -451,6 +451,7 @@ textarea {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: inherit;
+  padding-bottom: 5%;
 }
 
 .global-headings {
@@ -732,7 +733,7 @@ textarea {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 25%;
+  padding-bottom: 30%;
 }
 .blog-post .rel-container {
   -ms-flex-preferred-size: 65%;
