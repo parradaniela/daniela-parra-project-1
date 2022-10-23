@@ -48,7 +48,7 @@
 
         .aside-text {
             padding: 115% 0 10%;
-            border-left: 20px solid v.$color-primary;
+            border-left: v.$gutter-small solid v.$color-primary;
 
             li {
                 list-style: disc;

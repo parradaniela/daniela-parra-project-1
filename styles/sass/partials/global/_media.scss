@@ -1,7 +1,5 @@
 @use './variables' as v;
 
-// TODO: Fix the H2s in small screen sizes. Maybe redo the top nav idk.
-
 @media (max-width: 1620px) {
     // Home page articles
     .articles-row-container {
@@ -22,13 +20,10 @@
             margin: 10% 0 0;
         }
             
-        .rel-container {
-            // width: 60%;
-
-            .home-header-img {
-                bottom: -100px;
-            }
+        .rel-container .home-header-img {
+            bottom: -100px;
         }
+
     }
 
     // Home page About
@@ -125,7 +120,7 @@
                 align-self: center;
                 width: 100%;
                 box-shadow: none;
-                border-bottom: 20px solid v.$color-primary;
+                border-bottom: v.$gutter-small solid v.$color-primary;
             }
             
             .article-text {
@@ -147,7 +142,7 @@
             }
 
             .aside-text {
-                padding: 50px 0 0;
+                padding: v.$gutter-medium 0 0;
                 border: none;
                 display: flex;
                 align-items: center;
@@ -155,7 +150,7 @@
                 &-container {
                     flex-basis: 50%;
                     height: 100%;
-                    padding: 0 20px;
+                    padding: 0 v.$gutter-small;
                     display: flex;
                     flex-direction: column;
                 }
@@ -353,7 +348,7 @@
     .contact-form {
         padding: 30px;
         box-shadow: none;
-        border-bottom: 20px solid v.$color-primary;
+        border-bottom: v.$gutter-small solid v.$color-primary;
     }
 }      
 
@@ -370,7 +365,7 @@
 
     // Home page About section
     .about-flex-img {
-        width: 70%;
+        width: 60%;
     }
 
     // Home page Search section
@@ -388,7 +383,7 @@
         flex-direction: column;
 
         .blog-comments-text {
-            margin-top: 20px;
+            margin-top: v.$gutter-small;
         }
     }
 
@@ -405,7 +400,7 @@
         align-items: flex-start;
 
         &-container:last-child {
-            margin-top: 20px;
+            margin-top: v.$gutter-small;
         }
     }
 }
@@ -414,7 +409,7 @@
     // Global styles
 
     .global-headings .logo {
-        margin: 20px 0 100px;
+        margin: v.$gutter-small 0 100px;
     }
 
     textarea {
@@ -455,7 +450,7 @@
 
     // Global header
     .global-headings .logo {
-        margin-bottom: 20px;
+        margin-bottom: v.$gutter-small;
     }
 
 
@@ -482,10 +477,12 @@
         margin: 0 auto;
     }
 
+    // Blog page header
     .blog-header {
         height: 40vh;
     }
 
+    // Contact page header
     .contact-header {
         height: 40vh;
     }
@@ -506,6 +503,12 @@
         }
     }
 
+    // Home page About section
+    .about-flex-img {
+        width: 70%;
+        margin-bottom: v.$gutter-small;
+    }
+
     // Blog page header 
     .blog-header {
         background-position: 35%;
@@ -522,7 +525,7 @@
 @media (max-width: 415px) {
     // Global styles
     .global-headings .logo {
-        margin-bottom: 50px;
+        margin-bottom: v.$gutter-medium;
     }
 
     input,

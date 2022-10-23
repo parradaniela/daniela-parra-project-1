@@ -44,7 +44,7 @@ li {
 }
 
 p {
-    margin: 20px 0;
+    margin: v.$gutter-small 0;
 }
 
 textarea {
@@ -64,7 +64,7 @@ textarea {
 .btn {
     background-color: v.$color-secondary-dark;
     padding: 15px 15px 10px;
-    margin: 20px 0;
+    margin: v.$gutter-small 0;
     border: none;
     @include v.transition-timing;
 

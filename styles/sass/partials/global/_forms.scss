@@ -1,14 +1,17 @@
 @use '../global/variables' as v;
 
+input,
+textarea {
+    padding: v.$gutter-small;
+}
+
 input {
-    border-bottom: v.$border-form;
-    padding: 20px;
     width: 45%;
+    border-bottom: v.$border-form;
 }
 
 textarea {
     border: v.$border-form;
-    padding: 20px;
     margin: 5% 0;
     height: 40vh;
 }

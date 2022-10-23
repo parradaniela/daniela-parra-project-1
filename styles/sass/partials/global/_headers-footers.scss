@@ -14,7 +14,7 @@
     flex-direction: column;
     
     .logo {
-        margin: 20px 0 150px;
+        margin: v.$gutter-small 0 v.$gutter-large;
     }
     
     h2 {
@@ -49,7 +49,7 @@
     @include v.transition-timing;
 
     h1 {
-        margin: 150px;
+        margin: v.$gutter-large;
         @include v.transition-timing;
     }
     
