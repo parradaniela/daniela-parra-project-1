@@ -1254,6 +1254,9 @@ p {
   .fa-solid {
     font-size: 2rem;
   }
+  .global-headings .logo {
+    margin-bottom: 50px;
+  }
   .home-header {
     background-position: 60%;
   }
@@ -1269,6 +1272,12 @@ p {
   }
   .search .wrapper {
     margin: 0 auto;
+  }
+  .blog-header {
+    height: 40vh;
+  }
+  .contact-header {
+    height: 40vh;
   }
 }
 @media (max-width: 494px) {
@@ -1305,22 +1314,16 @@ textarea {
   .wrapper {
     width: 95%;
   }
-  .global-header-nav {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+  .global-header-nav a {
+    font-size: 1.7rem;
   }
-  .global-header-nav li {
-    -ms-flex-preferred-size: 45%;
-        flex-basis: 45%;
-  }
-  .global-header-nav li:nth-child(odd) {
-    text-align: left;
-  }
-  .global-header-nav li:nth-child(even) {
-    text-align: right;
+  .global-header-nav a:hover, .global-header-nav a:focus {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   .home-header {
     text-align: center;
+    background-position: 55%;
   }
   .contact-form {
     padding: 0;

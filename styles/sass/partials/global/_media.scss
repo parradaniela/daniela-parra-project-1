@@ -1,5 +1,7 @@
 @use './variables' as v;
 
+// TODO: Fix the H2s in small screen sizes. Maybe redo the top nav idk.
+
 @media (max-width: 1620px) {
     // Home page articles
     .articles-row-container {
@@ -451,6 +453,9 @@
     }
 
     // Global header
+    .global-headings .logo {
+        margin-bottom: 50px;
+    }
 
 
     // Home page header
@@ -474,6 +479,14 @@
     // Home page Search section
     .search .wrapper {
         margin: 0 auto;
+    }
+
+    .blog-header {
+        height: 40vh;
+    }
+
+    .contact-header {
+        height: 40vh;
     }
 }
 
@@ -525,26 +538,20 @@
     }
 
     // Global nav 
-    .global-header-nav {
-        flex-wrap: wrap;
         
-        li {
-            flex-basis: 45%;
-    
-            &:nth-child(odd) {
-                text-align: left;
-            }
-    
-            &:nth-child(even) {
-                text-align: right;
-            }
+    .global-header-nav a {
+        font-size: 1.7rem;
+
+        &:hover, 
+        &:focus {
+            transform: scale(1.2);
         }
     }
-
-
+    
     // Home page header
     .home-header {
         text-align: center;
+        background-position: 55%;
     }
 
 
