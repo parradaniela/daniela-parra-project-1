@@ -893,9 +893,6 @@ h5 {
   .home-header h1 {
     margin: 10% 0 0;
   }
-  .home-header .rel-container {
-    width: 60%;
-  }
   .home-header .rel-container .home-header-img {
     bottom: -100px;
   }
