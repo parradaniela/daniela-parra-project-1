@@ -385,6 +385,10 @@ textarea {
   resize: none;
 }
 
+#toggle {
+  display: none;
+}
+
 .block-span {
   display: block;
 }
@@ -929,6 +933,12 @@ h5 {
   }
 }
 @media (max-width: 1215px) {
+  .global-header-nav {
+    margin-top: 25px;
+  }
+  .global-header-nav a {
+    padding: 15px;
+  }
   .home-header .rel-container .home-header-img {
     bottom: -30px;
   }
@@ -1050,6 +1060,9 @@ h5 {
   }
 }
 @media (max-width: 1120px) {
+  .global-header-nav li:not(:last-child) {
+    margin-right: 5px;
+  }
   .home-header {
     background-position: 80%;
   }
@@ -1063,7 +1076,22 @@ h5 {
     margin: 0;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1030px) {
+  .global-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .global-header-nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0;
+  }
   .about-flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1178,6 +1206,9 @@ h5 {
   .blog-comments-display li .blog-comments-text {
     margin-top: 20px;
   }
+  .contact-header {
+    height: 50vh;
+  }
 }
 @media (max-width: 700px) {
   .blog-post-aside .aside-text {
@@ -1216,6 +1247,10 @@ h5 {
     font-size: 2.8rem;
     line-height: 5rem;
   }
+  a,
+p {
+    font-size: 1.8rem;
+  }
   .fa-solid {
     font-size: 2rem;
   }
@@ -1237,6 +1272,15 @@ h5 {
   }
 }
 @media (max-width: 494px) {
+  .global-header-nav a {
+    padding: 15px;
+  }
+  .global-header-nav a:first-child {
+    padding-left: 0;
+  }
+  .global-header-nav a:last-child {
+    padding-right: 0;
+  }
   .blog-header {
     background-position: 35%;
   }
@@ -1260,6 +1304,23 @@ textarea {
   }
   .wrapper {
     width: 95%;
+  }
+  .global-header-nav {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .global-header-nav li {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+  }
+  .global-header-nav li:nth-child(odd) {
+    text-align: left;
+  }
+  .global-header-nav li:nth-child(even) {
+    text-align: right;
+  }
+  .home-header {
+    text-align: center;
   }
   .contact-form {
     padding: 0;
