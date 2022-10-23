@@ -345,10 +345,10 @@ input,
 label,
 fieldset,
 textarea {
-  margin: 0;
-  padding: 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  margin: 0;
+  padding: 0;
 }
 
 fieldset,
@@ -359,10 +359,10 @@ textarea {
 }
 
 a {
-  text-decoration: none;
-  display: inline-block;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  text-decoration: none;
+  display: inline-block;
 }
 
 img {
@@ -385,21 +385,17 @@ textarea {
   resize: none;
 }
 
-#toggle {
-  display: none;
-}
-
 .block-span {
   display: block;
 }
 
 .btn {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   background-color: #065635;
   padding: 15px 15px 10px;
   margin: 20px 0;
   border: none;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
 }
 .btn:hover, .btn:focus {
   color: #F5F5F5;
@@ -490,40 +486,40 @@ textarea {
 }
 
 .home-header {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   background: url(../sanctuary-helpers-final-images/header-home.jpg) center/cover;
   height: 100vh;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
 }
 .home-header h1 {
-  margin: 150px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  margin: 150px;
 }
 .home-header .rel-container {
   width: 55%;
 }
 .home-header .rel-container .home-header-img {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   position: absolute;
   width: 100%;
   left: 0;
   bottom: -150px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
 }
 
 .contact-header {
-  background: url(../sanctuary-helpers-final-images/contact-image.jpg) center/cover;
-  height: 75vh;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  background: url(../sanctuary-helpers-final-images/contact-image.jpg) center/cover;
+  height: 75vh;
 }
 
 .blog-header {
-  background: url(../sanctuary-helpers-final-images/blog-image.jpg) center/cover;
-  height: 75vh;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  background: url(../sanctuary-helpers-final-images/blog-image.jpg) center/cover;
+  height: 75vh;
 }
 
 .global-footer {
@@ -562,26 +558,26 @@ textarea {
 }
 
 .global-form-inputs {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 .about-flex {
-  margin-top: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 10%;
 }
 .about-flex-text {
   -ms-flex-preferred-size: 70%;
@@ -616,21 +612,21 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .services-flex li {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 .services .services-icon {
   height: 60px;
@@ -656,7 +652,6 @@ textarea {
 }
 
 .articles {
-  background-color: #E0FDDF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -664,6 +659,7 @@ textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #E0FDDF;
 }
 .articles-row {
   display: -webkit-box;
@@ -676,6 +672,8 @@ textarea {
   margin-bottom: 100px;
 }
 .articles-row-container {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   -webkit-box-ordinal-group: 2;
@@ -683,8 +681,6 @@ textarea {
           order: 1;
   padding: 0 10%;
   position: relative;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
 }
 .articles-row-container img {
   width: 80%;
@@ -729,13 +725,13 @@ textarea {
 }
 
 .blog-post {
-  background-color: #E0FDDF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: #E0FDDF;
   padding-bottom: 30%;
 }
 .blog-post .rel-container {
@@ -743,7 +739,6 @@ textarea {
       flex-basis: 65%;
 }
 .blog-post-article {
-  background-color: #F5F5F5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -751,6 +746,7 @@ textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #F5F5F5;
   border-bottom: 5px solid #F8FB05;
   position: absolute;
   left: 0;
@@ -795,7 +791,6 @@ h5 {
   background-color: #E0FDDF;
 }
 .blog-comments-display {
-  margin: 5% 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -803,6 +798,7 @@ h5 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 5% 0;
   width: 65%;
 }
 .blog-comments-display li {
@@ -1045,13 +1041,13 @@ h5 {
     position: static;
   }
   .contact-socials {
-    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    width: 100%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin-top: 5%;

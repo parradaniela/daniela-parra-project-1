@@ -1,9 +1,8 @@
 @use '../global/variables' as v;
 
 .articles {
+    @include v.flex-column;
     background-color: v.$color-secondary-light;
-    display: flex;
-    flex-direction: column;
 
     &-row {
         display: flex;
@@ -14,11 +13,11 @@
         }
     }
     &-row-container {
+        @include v.transition-timing;
         flex-basis: 50%;
         order: 1;
         padding: 0 10%;
         position: relative;
-        @include v.transition-timing;
 
         img {
             width: 80%;

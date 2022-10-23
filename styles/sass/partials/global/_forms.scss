@@ -16,14 +16,12 @@ textarea {
     height: 40vh;
 }
 .global-form-flex {
-    display: flex;
-    flex-direction: column;
+    @include v.flex-column;
 }
 
 .global-form-inputs {
+    @include v.flex-row-space-between;
     flex-basis: 100%;
-    display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
 }
 

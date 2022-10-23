@@ -3,15 +3,13 @@
 // Global headers 
 
 .global-header {
-    display: flex;
-    justify-content: space-between;
+    @include v.flex-row-space-between;
     height: inherit;
     padding-bottom: 5%;
 }
 
 .global-headings {
-    display: flex;
-    flex-direction: column;
+    @include v.flex-column;
     
     .logo {
         margin: v.$gutter-small 0 v.$gutter-large;
@@ -44,24 +42,24 @@
 // Home page header
 
 .home-header {
+    @include v.transition-timing;
     background: url(../sanctuary-helpers-final-images/header-home.jpg) center /  cover;
     height: 100vh;
-    @include v.transition-timing;
 
     h1 {
-        margin: v.$gutter-large;
         @include v.transition-timing;
+        margin: v.$gutter-large;
     }
     
     .rel-container {
         width: 55%;
         
         .home-header-img {
+            @include v.transition-timing;
             position: absolute;
             width: 100%;
             left: 0;
             bottom: -150px;
-            @include v.transition-timing;
         }
     }
 }
@@ -69,17 +67,17 @@
 // Contact header
 
 .contact-header {
+    @include v.transition-timing;
     background: url(../sanctuary-helpers-final-images/contact-image.jpg) center / cover;
     height: 75vh;
-    @include v.transition-timing;
 } 
 
 // Blog header 
 
 .blog-header {
+    @include v.transition-timing;
     background: url(../sanctuary-helpers-final-images/blog-image.jpg) center / cover;
     height: 75vh;
-    @include v.transition-timing;
 }
 
 // Global footers

@@ -6,8 +6,7 @@
 }
 
 .contact-container {
-    display: flex;
-    justify-content: space-between;
+    @include v.flex-row-space-between;
 
     .rel-container {
         flex-basis: 75%;

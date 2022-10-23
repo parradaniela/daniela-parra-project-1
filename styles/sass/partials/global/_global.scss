@@ -14,9 +14,9 @@ input,
 label,
 fieldset,
 textarea {
+    @include v.transition-timing;
     margin: 0; 
     padding: 0;
-    @include v.transition-timing;
 }
 
 fieldset,
@@ -27,9 +27,9 @@ textarea {
 }
 
 a {
+    @include v.transition-timing;
     text-decoration: none; 
     display: inline-block;
-    @include v.transition-timing;
 }
 
 img {
@@ -51,10 +51,6 @@ textarea {
     resize: none;
 }
 
-#toggle {
-    display: none;
-}
-
 // Global classes
 
 .block-span {
@@ -62,11 +58,11 @@ textarea {
 }
 
 .btn {
+    @include v.transition-timing;
     background-color: v.$color-secondary-dark;
     padding: 15px 15px 10px;
     margin: v.$gutter-small 0;
     border: none;
-    @include v.transition-timing;
 
     &:hover, 
     &:focus {

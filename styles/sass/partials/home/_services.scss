@@ -4,14 +4,12 @@
     margin-bottom: 50px;
     
     &-flex {
-        display: flex;
+        @include v.flex-row-space-between;
         flex-wrap: wrap;
-        justify-content: space-between;
         
         li {
+            @include v.flex-row-space-between;
             flex-basis: 50%;
-            display: flex;
-            justify-content: space-between;
         }
     }
     

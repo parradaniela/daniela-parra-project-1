@@ -3,9 +3,8 @@
 // Blog post
 
 .blog-post {
+    @include v.flex-row-space-between;
     background-color: v.$color-secondary-light;
-    display: flex;
-    justify-content: space-between;
     padding-bottom: 30%;
 
     .rel-container {
@@ -13,9 +12,8 @@
     }
     
     &-article {
+        @include v.flex-column;
         background-color: v.$color-white;
-        display: flex;
-        flex-direction: column;
         border-bottom: 5px solid v.$color-primary;
         position: absolute;
         left: 0;

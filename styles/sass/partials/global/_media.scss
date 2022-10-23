@@ -193,9 +193,8 @@
 
     // Contact page Socials navigation
     .contact-socials {
+        @include v.flex-row-space-between;
         width: 100%;
-        display: flex;
-        justify-content: space-between;
         flex-wrap: wrap;
         margin-top: 5%;
     

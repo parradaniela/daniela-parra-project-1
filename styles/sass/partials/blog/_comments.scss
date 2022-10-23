@@ -10,14 +10,12 @@ h5 {
     background-color: v.$color-secondary-light;
 
     &-display {
+        @include v.flex-column;
         margin: 5% 0;
-        display: flex;
-        flex-direction: column;
         width: 65%;
 
         li {
-            display: flex;
-            justify-content: space-between;
+            @include v.flex-row-space-between;
             align-items: flex-start;
             margin-top: 30px;
 

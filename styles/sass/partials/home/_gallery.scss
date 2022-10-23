@@ -5,8 +5,7 @@
 }
 
 .gallery-flex {
-    display: flex;
-    justify-content: space-between;
+    @include v.flex-row-space-between;
 
     &-item {
         flex-basis: 30%;

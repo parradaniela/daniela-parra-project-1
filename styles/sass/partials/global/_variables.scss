@@ -31,3 +31,13 @@ $gutter-large: 150px;
 @mixin transition-timing {
     transition: all .3s;
 }
+
+@mixin flex-row-space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}

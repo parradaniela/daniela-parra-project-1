@@ -1,9 +1,8 @@
 @use '../global/variables' as v;
 
 .about-flex {
+    @include v.flex-row-space-between;
     margin-top: 10%;
-    display: flex;
-    justify-content: space-between;
 
     &-text {
         flex-basis: 70%;
