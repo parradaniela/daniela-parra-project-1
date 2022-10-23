@@ -1002,10 +1002,6 @@ h5 {
             align-items: center;
   }
   .blog-post-aside .aside-text-container {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-    height: 100%;
-    padding: 0 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1013,6 +1009,10 @@ h5 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    height: 100%;
+    padding: 0 20px;
   }
   .blog-comments-display {
     margin: 3% 0;
@@ -1202,9 +1202,6 @@ h5 {
   }
   .blog-comments-display li .blog-comments-text {
     margin-top: 20px;
-  }
-  .contact-header {
-    height: 50vh;
   }
 }
 @media (max-width: 700px) {

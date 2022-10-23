@@ -1,7 +1,7 @@
 @use './variables' as v;
 
 @media (max-width: 1620px) {
-    // Home page articles
+    // Home page articles section
     .articles-row-container {
         padding: 0 5% 0 10%;
 
@@ -31,8 +31,7 @@
         margin-top: 5%;
     }
 
-    // Home page articles
-
+    // Home page articles section
     .articles.section-padding {
         padding: 0;
     }
@@ -79,13 +78,11 @@
     }
 
     // Home page header
-    
     .home-header .rel-container .home-header-img{
         bottom: -30px;
     }
 
     // Home page about section
-
     .about-flex {
         align-items: center;
 
@@ -131,7 +128,7 @@
         }
 
 
-    // Blog page Aside     
+    // Blog page Aside
         &-aside {
             display: flex;
             height: 40vh;
@@ -148,11 +145,10 @@
                 align-items: center;
 
                 &-container {
+                    @include v.flex-column;
                     flex-basis: 50%;
                     height: 100%;
                     padding: 0 v.$gutter-small;
-                    display: flex;
-                    flex-direction: column;
                 }
             }
         }
@@ -164,7 +160,7 @@
         width: 100%;
     }
 
-    // BLog page Comment form section
+    // Blog page Comment form 
     .blog-form {
         width: 100%;
     }
@@ -211,7 +207,6 @@
     }
 
     // Home page header
-
     .home-header {
         background-position: 80%;
 
@@ -385,11 +380,6 @@
             margin-top: v.$gutter-small;
         }
     }
-
-    // Contact page header 
-    .contact-header {
-        height: 50vh;
-    }
 }
 
 @media (max-width: 700px) {
@@ -406,7 +396,6 @@
 
 @media (max-width: 650px) {
     // Global styles
-
     .global-headings .logo {
         margin: v.$gutter-small 0 100px;
     }
@@ -452,7 +441,6 @@
         margin-bottom: v.$gutter-small;
     }
 
-
     // Home page header
     .home-header {
         background-position: 60%;
@@ -489,7 +477,6 @@
 
 @media (max-width: 494px) {
     // Global nav 
-
     .global-header-nav a {
         padding: 15px;
 
@@ -541,7 +528,6 @@
     }
 
     // Global nav 
-        
     .global-header-nav a {
         font-size: 1.7rem;
 
