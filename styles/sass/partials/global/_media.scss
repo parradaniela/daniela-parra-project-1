@@ -73,9 +73,16 @@
 }
 
 @media (max-width: 1215px) {
+    // Global nav 
+    .global-header-nav {
+        margin-top: 25px;
+
+        a {
+            padding: 15px;
+        }
+    }
+
     // Home page header
-    
-    // TODO: The nav starts to break here - convert to button or reduce space between each anchor?
     
     .home-header .rel-container .home-header-img{
         bottom: -30px;
@@ -203,6 +210,11 @@
 }
 
 @media (max-width: 1120px) {
+    // Global nav
+    .global-header-nav li:not(:last-child) {
+        margin-right: 5px;
+    }
+
     // Home page header
 
     .home-header {
@@ -223,7 +235,18 @@
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1030px) {
+    // Global nav 
+    .global-header {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        
+        &-nav {
+            justify-content: space-between;
+            margin: 0;
+        }
+    }
+
     // Home page About section
     .about-flex {
         flex-direction: column-reverse;
@@ -325,11 +348,6 @@
         }
     }
 
-    // Contact page header
-    .contact-header {
-        height: 40vh;
-    }
-
     // Contact page form 
     .contact-form {
         padding: 30px;
@@ -373,6 +391,11 @@
             margin-top: 20px;
         }
     }
+
+    // Contact page header 
+    .contact-header {
+        height: 50vh;
+    }
 }
 
 @media (max-width: 700px) {
@@ -415,9 +438,17 @@
         line-height: 5rem;
     }
 
+    a, 
+    p {
+        font-size: 1.8rem;
+    }
+
     .fa-solid {
         font-size: 2rem;
     }
+
+    // Global header
+
 
     // Home page header
     .home-header {
@@ -444,6 +475,20 @@
 }
 
 @media (max-width: 494px) {
+    // Global nav 
+
+    .global-header-nav a {
+        padding: 15px;
+
+        &:first-child {
+            padding-left: 0;
+        }
+
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+
     // Blog page header 
     .blog-header {
         background-position: 35%;
@@ -470,6 +515,29 @@
 
     .wrapper {
         width: 95%;
+    }
+
+    // Global nav 
+    .global-header-nav {
+        flex-wrap: wrap;
+        
+        li {
+            flex-basis: 45%;
+    
+            &:nth-child(odd) {
+                text-align: left;
+            }
+    
+            &:nth-child(even) {
+                text-align: right;
+            }
+        }
+    }
+
+
+    // Home page header
+    .home-header {
+        text-align: center;
     }
 
 
