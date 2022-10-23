@@ -247,82 +247,82 @@ html {
 
 h1,
 h2 {
-  font-family: "Kumar One Outline", cursive;
   font-size: 6.8rem;
   line-height: 6.4rem;
   letter-spacing: normal;
   text-transform: uppercase;
+  font-family: "Kumar One Outline", cursive;
 }
 
 h3 {
-  font-family: "Kumar One", cursive;
   font-size: 3.3rem;
   line-height: 5.8rem;
   letter-spacing: 2.1px;
   text-transform: uppercase;
+  font-family: "Kumar One", cursive;
 }
 
 h4 {
-  font-family: "Kumar One", cursive;
   font-size: 2.7rem;
   line-height: 3.2rem;
   letter-spacing: 2.1px;
   text-transform: uppercase;
+  font-family: "Kumar One", cursive;
 }
 
 h5 {
-  font-family: "Lato", sans-serif;
   font-size: 2rem;
   line-height: 3.2rem;
   letter-spacing: 2px;
   text-transform: uppercase;
+  font-family: "Lato", sans-serif;
 }
 
 p,
 .paragraph-text {
-  font-family: "Lato", sans-serif;
   font-size: 2rem;
   line-height: 3.2rem;
   letter-spacing: 2px;
   text-transform: none;
+  font-family: "Lato", sans-serif;
 }
 
 input,
 textarea {
-  font-family: "Lato", sans-serif;
   font-size: 2rem;
   line-height: 3.2rem;
   letter-spacing: 2px;
   text-transform: uppercase;
+  font-family: "Lato", sans-serif;
 }
 
 a {
-  font-family: "Lato", sans-serif;
-  color: #151514;
-  font-weight: 700;
-  text-align: center;
   font-size: 2rem;
   line-height: 2.9rem;
   letter-spacing: 1.4px;
   text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  color: #151514;
+  font-weight: 700;
+  text-align: center;
 }
 
 .logo {
-  font-family: "Kumar One", cursive;
   font-size: 2.2rem;
   line-height: 2.4rem;
   letter-spacing: 1.2px;
   text-transform: uppercase;
+  font-family: "Kumar One", cursive;
 }
 
 .btn {
-  font-family: "Kumar One", cursive;
-  color: #F5F5F5;
-  text-align: center;
   font-size: 2rem;
   line-height: 3.2rem;
   letter-spacing: 1px;
   text-transform: uppercase;
+  font-family: "Kumar One", cursive;
+  color: #F5F5F5;
+  text-align: center;
 }
 
 .fa-solid {
@@ -402,7 +402,7 @@ textarea {
   background-color: #151514;
 }
 
-.italicize {
+.italicized {
   font-style: italic;
 }
 
