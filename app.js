@@ -23,9 +23,8 @@ app.handleSubmit = () => {
         app.messageInput.value = "";
         app.emailInput.value = "";
         
-        // Calls function to create new LI
-        app.createNewLi();
-        app.updateLiFields(currentDate, userName, userMessage);
+        // Passes user inputs into a function that creates the comment div
+        app.createCommentDiv(currentDate, userName, userMessage);
     });
 }
 
@@ -36,8 +35,6 @@ app.createNewLi = () => {
         `<li>
             <div class="blog-comments-img">
                 <img src="./sanctuary-helpers-final-images/comment-image2.jpg" alt="User profile photo">
-            </div>
-            <div class="blog-comments-text">
             </div>
         </li>`
     console.log(newCommentLi);
@@ -56,14 +53,25 @@ app.createNewLi = () => {
     </div>
 </li> */
 
-app.updateLiFields = (date, name, message) => {
+app.createCommentDiv = (date, name, message) => {
+    // Creates a new div and grants it the appropriate class
+    const newDiv = document.createElement("div");
+    newDiv.className = "blog-comments-text";
+    
+    // Creates div children elements
     const newDateHeading = document.createElement("h5");
     const newParagraph = document.createElement("p");
+
     if (message.trim()) {
+
+        // Populates elements and appends to div as children
         newDateHeading.textContent = `${date} by ${name}`;
         newParagraph.textContent = message;
-        console.log(newDateHeading);
-        console.log(newParagraph);
+        newDiv.appendChild(newDateHeading);
+        newDiv.appendChild(newParagraph);
+
+        // Passes the populated div to a function that constructs the rest of the LI
+        app.createNewLi(newDiv);
     }
 }
 
