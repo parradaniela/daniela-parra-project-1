@@ -25,6 +25,7 @@ app.handleSubmit = () => {
         
         // Calls function to create new LI
         app.createNewLi();
+        app.updateLiFields(currentDate, userName, userMessage);
     });
 }
 
@@ -55,8 +56,15 @@ app.createNewLi = () => {
     </div>
 </li> */
 
-app.updateLiFields = () => {
-    
+app.updateLiFields = (date, name, message) => {
+    const newDateHeading = document.createElement("h5");
+    const newParagraph = document.createElement("p");
+    if (message.trim()) {
+        newDateHeading.textContent = `${date} by ${name}`;
+        newParagraph.textContent = message;
+        console.log(newDateHeading);
+        console.log(newParagraph);
+    }
 }
 
 // Append list item to ul 
