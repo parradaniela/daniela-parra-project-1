@@ -50,7 +50,7 @@ app.createCommentDiv = (date, name, message) => {
 }
 
 // Function that creates the rest of the LI and appends it to the UL. 
-app.postNewLi = (secondDiv) => {
+app.postNewLi = (textDiv) => {
     const newCommentLi = document.createElement("li");
     // Creates a div for the img, updates its class and innerHTML
     const newImgDiv = document.createElement("div");
@@ -58,9 +58,9 @@ app.postNewLi = (secondDiv) => {
     // Using placekitten as there is no way to retrieve a user photo at this time
     newImgDiv.innerHTML = `<img src="http://placekitten.com/200/200" alt="User profile photo">`
 
-    // Appends the image div, then the text div to the LI as children
+    // Appends the image div, then the passed text div to the LI as children
     newCommentLi.appendChild(newImgDiv);
-    newCommentLi.appendChild(secondDiv);
+    newCommentLi.appendChild(textDiv);
     
     // Appends the entire LI to the .blog-comments-display UL
     app.ulEl.appendChild(newCommentLi);
@@ -81,3 +81,4 @@ app.init = () => {
 }
 
 app.init();
+
