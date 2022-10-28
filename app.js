@@ -56,7 +56,7 @@ app.postNewLi = (textDiv) => {
     const newImgDiv = document.createElement("div");
     newImgDiv.className = "blog-comments-img";
     // Using placekitten as there is no way to retrieve a user photo at this time
-    newImgDiv.innerHTML = `<img src="http://placekitten.com/200/200" alt="User profile photo">`
+    newImgDiv.innerHTML = `<img src="http://placekitten.com/94/92" alt="User profile photo">`
 
     // Appends the image div, then the passed text div to the LI as children
     newCommentLi.appendChild(newImgDiv);
