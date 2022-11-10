@@ -1,5 +1,18 @@
 @use './variables' as v;
 
+
+html {
+    font-size: 62.5%;
+}
+
+// Font families
+h1, h2 {font-family: v.$heading-outline;}
+
+h3, h4, .logo, .btn {font-family: v.$heading-filled;}
+
+h5, p, .paragraph-text, input, textarea, a {font-family: v.$body-text;}
+
+// Font styles
 @mixin font-styles($font-size, $line-height, $letter-spacing, $text-transform) {
     font-size: $font-size;
     line-height: $line-height;
@@ -7,68 +20,34 @@
     text-transform: $text-transform;
 }
 
-html {
-    font-size: 62.5%;
-}
+h1, h2 {@include font-styles(6.8rem, 6.4rem, normal, uppercase);}
 
-h1,
-h2 {
-    @include font-styles(6.8rem, 6.4rem, normal, uppercase);
-    font-family: v.$heading-outline;
-}
+h3 {@include font-styles(3.3rem, 5.8rem, 2.1px, uppercase);}
 
-h3 {
-    @include font-styles(3.3rem, 5.8rem, 2.1px, uppercase);
-    font-family: v.$heading-filled;
-}
+h4 {@include font-styles(2.7rem, 3.2rem, 2.1px, uppercase);}
 
-h4 {
-    @include font-styles(2.7rem, 3.2rem, 2.1px, uppercase);
-    font-family: v.$heading-filled;
-}
+h5 {@include font-styles(2rem, 3.2rem, 2px, uppercase);}
 
-h5 {
-    @include font-styles(2rem, 3.2rem, 2px, uppercase);
-    font-family: v.$body-text;
-}
+p, .paragraph-text {@include font-styles(2rem, 3.2rem, 2px, none);}
 
-p,
-.paragraph-text {
-    @include font-styles(2rem, 3.2rem, 2px, none);
-    font-family: v.$body-text;
-}
+input,textarea {@include font-styles(2rem, 3.2rem, 2px, uppercase);}
 
-input,
-textarea {
-    @include font-styles(2rem, 3.2rem, 2px, uppercase);
-    font-family: v.$body-text;
-}
+.logo {@include font-styles(2.2rem, 2.4rem, 1.2px, uppercase);}
 
 a {
     @include font-styles(2rem, 2.9rem, 1.4px, uppercase);
-    font-family: v.$body-text;
     color: v.$color-black;
     font-weight: 700;
     text-align: center;
 }
 
-.logo {
-    @include font-styles(2.2rem, 2.4rem, 1.2px, uppercase);
-    font-family: v.$heading-filled;
-}
-
 .btn {
     @include font-styles(2rem, 3.2rem, 1px, uppercase);
-    font-family: v.$heading-filled;
     color: v.$color-white;
     text-align: center;
 }
 
 // Font awesome icon sizing
-.fa-solid {
-    font-size: 3rem;
-}
+.fa-solid {font-size: 3rem;}
 
-.fa-brands {
-    font-size: 2.5rem;
-}
+.fa-brands {font-size: 2.5rem;}

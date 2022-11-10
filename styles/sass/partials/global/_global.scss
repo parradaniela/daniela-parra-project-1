@@ -1,7 +1,6 @@
 @use './variables' as v;
 
 // Baseline styles
-
 h1, 
 h2, 
 h3, 
@@ -52,7 +51,6 @@ textarea {
 }
 
 // Global classes
-
 .block-span {
     display: block;
 }
@@ -108,5 +106,3 @@ textarea {
     max-width: 1400px;
     margin: 0 auto;
 }
-
-

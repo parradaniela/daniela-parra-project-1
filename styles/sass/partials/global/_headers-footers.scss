@@ -1,18 +1,18 @@
 @use "./variables" as v;
 
 // Global headers 
-
 .global-header {
     @include v.flex-row-space-between;
     height: inherit;
     padding-bottom: 5%;
+    width: 100%;
 }
 
 .global-headings {
     @include v.flex-column;
     
     .logo {
-        margin: v.$gutter-small 0 v.$gutter-large;
+        margin: v.$gutter-small 0 v.$gutter-huge;
     }
     
     h2 {
@@ -40,16 +40,15 @@
 } 
 
 // Home page header
-
 .home-header {
     @include v.transition-timing;
-    background: url(../sanctuary-helpers-final-images/header-home.jpg) center /  cover;
+    background: url(../assets/header-home.jpg) center /  cover;
     height: 100vh;
 
     h1 {
         @include v.transition-timing;
         margin: v.$gutter-large;
-    }
+    } 
     
     .rel-container {
         width: 55%;
@@ -65,23 +64,20 @@
 }
 
 // Contact header
-
 .contact-header {
     @include v.transition-timing;
-    background: url(../sanctuary-helpers-final-images/contact-image.jpg) center / cover;
+    background: url(../assets/contact-image.jpg) center / cover;
     height: 75vh;
 } 
 
 // Blog header 
-
 .blog-header {
     @include v.transition-timing;
-    background: url(../sanctuary-helpers-final-images/blog-image.jpg) center / cover;
+    background: url(../assets/blog-image.jpg) center / cover;
     height: 75vh;
 }
 
 // Global footers
-
 .global-footer {
     background: v.$color-black;
     color: v.$color-white;

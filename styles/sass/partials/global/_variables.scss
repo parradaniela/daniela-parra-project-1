@@ -1,5 +1,4 @@
 // Colours
-
 $color-primary: #F8FB05;
 $color-secondary-dark: #065635;
 $color-secondary-light: #E0FDDF;
@@ -7,36 +6,31 @@ $color-white: #F5F5F5;
 $color-black: #151514;
 
 // Fonts
-
 $heading-outline: 'Kumar One Outline', cursive;
 $heading-filled: 'Kumar One', cursive;
 $body-text: 'Lato', sans-serif;
 
 // Borders/Shadows
-
 $box-shadow-right: 20px 20px 0 0 $color-primary;
 $box-shadow-left: -20px 20px 0 0 $color-primary;
 $border-img: 20px solid $color-primary;
 $border-form: 2px solid $color-secondary-dark;
 
 // Spacing
-
 $gutter-small: 20px;
 $gutter-medium: 50px;
-$gutter-large: 150px;
+$gutter-large: 100px;
+$gutter-huge: 150px;
 
 
 // Mixins
-
 @mixin transition-timing {
     transition: all .3s;
 }
-
 @mixin flex-row-space-between {
     display: flex;
     justify-content: space-between;
 }
-
 @mixin flex-column {
     display: flex;
     flex-direction: column;

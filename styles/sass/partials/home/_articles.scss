@@ -12,6 +12,7 @@
             margin-bottom: 100px;
         }
     }
+    
     &-row-container {
         @include v.transition-timing;
         flex-basis: 50%;
