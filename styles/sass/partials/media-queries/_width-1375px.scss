@@ -1,0 +1,58 @@
+@use '../global/variables' as v;
+
+@media (max-width: 1375px) {
+    // Home page header 
+    .home-header {
+        background-position: center;
+
+        h1 {
+            margin: 10% 0 0;
+        }
+            
+        .rel-container .home-header-img {
+            bottom: -100px;
+        }
+
+    }
+
+    // Home page About
+    .about-flex {
+        margin-top: 5%;
+    }
+
+    // Home page articles section
+    .articles.section-padding {
+        padding: 0;
+    }
+    .articles-row:first-child {
+        margin-bottom: 0;
+    }
+
+    .articles-row-container {
+        padding: 5%;
+
+        &:first-child {
+            padding: 0;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .img-left {
+            position:static;
+            box-shadow: none;
+            border-bottom: v.$border-img;
+            border-right: v.$border-img;
+        }
+        
+        .img-right {
+            position:static;
+            box-shadow: none;
+            border-bottom: v.$border-img;
+            border-left: v.$border-img;
+        }
+    }
+
+}

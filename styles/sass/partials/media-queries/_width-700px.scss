@@ -1,0 +1,13 @@
+@use '../global/variables' as v;
+
+@media (max-width: 700px) {
+    // Blog post Aside section
+    .blog-post-aside .aside-text {
+        flex-direction: column;
+        align-items: flex-start;
+
+        &-container:last-child {
+            margin-top: v.$gutter-small;
+        }
+    }
+}

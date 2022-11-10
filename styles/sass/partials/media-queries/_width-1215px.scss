@@ -1,0 +1,132 @@
+@use '../global/variables' as v;
+
+@media (max-width: 1215px) {
+    // Global nav 
+    .global-header-nav {
+        margin-top: 25px;
+
+        a {
+            padding: 15px;
+        }
+    }
+
+    // Home page header
+    .home-header .rel-container .home-header-img{
+        bottom: -30px;
+    }
+
+    // Home page about section
+    .about-flex {
+        align-items: center;
+
+        &-text {
+            flex-basis: 65%;
+            margin-right: 60px;
+        }
+    }
+
+    // Home page services section 
+    .services-flex li {
+        flex-basis: 47%;
+    }
+
+    // Blog page header
+    .blog-header {
+        height: 50vh;
+    }
+
+    // Blog page main 
+    .blog-post {
+        flex-direction: column-reverse;
+
+        &.section-padding {
+            padding: 0;
+        }
+
+        &-article {
+            position: static;
+            
+            .article-img {
+                align-self: center;
+                width: 100%;
+                box-shadow: none;
+                border-bottom: v.$gutter-small solid v.$color-primary;
+            }
+            
+            .article-text {
+                border: none;
+                margin: 5%;
+                padding: 0;
+            }
+        }
+    // Blog page Aside
+        &-aside {
+            display: flex;
+            height: 40vh;
+
+            .aside-img {
+                position: static;
+                border: none;
+            }
+
+            .aside-text {
+                padding: v.$gutter-medium 0 0;
+                border: none;
+                display: flex;
+                align-items: center;
+
+                &-container {
+                    @include v.flex-column;
+                    flex-basis: 50%;
+                    height: 100%;
+                    padding: 0 v.$gutter-small;
+                }
+            }
+        }
+    }
+
+    // Blog page Comments section
+    .blog-comments-display {
+        margin: 3% 0;
+        width: 100%;
+    }
+
+    // Blog page Comment form 
+    .blog-form {
+        width: 100%;
+    }
+
+    // Contact page header
+    .contact-header {
+        height: 50vh;
+    }
+
+    .contact-main {
+        height: auto;
+    }
+
+    // Contact page form
+    .contact-container {
+        flex-direction: column;
+
+        .rel-container {
+            flex-basis: 100%;
+        }
+    }
+
+    .contact-form {
+        position: static;
+    }
+
+    // Contact page Socials navigation
+    .contact-socials {
+        @include v.flex-row-space-between;
+        width: 100%;
+        flex-wrap: wrap;
+        margin-top: 5%;
+    
+        &-text p.lowercase {
+            margin-top: 0;
+        }
+    }
+}

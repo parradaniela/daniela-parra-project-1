@@ -1,5 +1,4 @@
 // GLobal partials
-
 @use "./partials/global/setup";
 @use "./partials/global/variables";
 @use "./partials/global/typography";
@@ -21,6 +20,16 @@
 // // Contact page
 @use "./partials/contact/contact-main";
 
-
 // // Media queries  
-@use "./partials/global/media"; 
+@use "./partials/media-queries/width-1620px";
+@use "./partials/media-queries/width-1375px";
+@use "./partials/media-queries/width-1215px";
+@use "./partials/media-queries/width-1120px";
+@use "./partials/media-queries/width-1030px";
+@use "./partials/media-queries/width-855px";
+@use "./partials/media-queries/width-768px";
+@use "./partials/media-queries/width-700px";
+@use "./partials/media-queries/width-650px";
+@use "./partials/media-queries/width-580px";
+@use "./partials/media-queries/width-494px";
+@use "./partials/media-queries/width-415px";

@@ -1,0 +1,24 @@
+@media (max-width: 1120px) {
+    // Global nav
+    .global-header-nav li:not(:last-child) {
+        margin-right: 5px;
+    }
+
+    // Home page header
+    .home-header {
+        background-position: 80%;
+
+        .rel-container .home-header-img {
+            display: none;
+        }
+    }
+
+    // Blog page Aside 
+    .blog-post-aside .aside-text-container {
+        padding: 0;
+
+        p {
+            margin: 0;
+        }
+    }
+}

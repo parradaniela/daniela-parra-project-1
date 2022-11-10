@@ -1,0 +1,38 @@
+@use '../global/variables' as v;
+
+@media (max-width: 855px) {
+    // Global styles
+
+    input {
+        width: 100%;
+    }
+
+    textarea {
+        margin-top: 7%;
+    }
+
+    //Home page Gallery section
+    .gallery-flex-item {
+        flex-basis: 70%;
+    } 
+
+    // Home page Services section
+    .services {
+        margin-bottom: 0;
+        
+        &-flex li {
+            flex-basis: 100%;
+    
+            &:not(:last-child) {
+                margin-bottom: 3%;
+            }
+        }
+    }
+
+    // Contact page form 
+    .contact-form {
+        padding: 30px;
+        box-shadow: none;
+        border-bottom: v.$gutter-small solid v.$color-primary;
+    }
+}   
