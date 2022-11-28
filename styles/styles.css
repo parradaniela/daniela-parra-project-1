@@ -245,13 +245,23 @@ html {
   font-size: 62.5%;
 }
 
-h1,
-h2 {
+h1, h2 {
+  font-family: "Kumar One Outline", cursive;
+}
+
+h3, h4, .logo, .btn {
+  font-family: "Kumar One", cursive;
+}
+
+h5, p, .paragraph-text, input, textarea, a {
+  font-family: "Lato", sans-serif;
+}
+
+h1, h2 {
   font-size: 6.8rem;
   line-height: 6.4rem;
   letter-spacing: normal;
   text-transform: uppercase;
-  font-family: "Kumar One Outline", cursive;
 }
 
 h3 {
@@ -259,7 +269,6 @@ h3 {
   line-height: 5.8rem;
   letter-spacing: 2.1px;
   text-transform: uppercase;
-  font-family: "Kumar One", cursive;
 }
 
 h4 {
@@ -267,7 +276,6 @@ h4 {
   line-height: 3.2rem;
   letter-spacing: 2.1px;
   text-transform: uppercase;
-  font-family: "Kumar One", cursive;
 }
 
 h5 {
@@ -275,36 +283,20 @@ h5 {
   line-height: 3.2rem;
   letter-spacing: 2px;
   text-transform: uppercase;
-  font-family: "Lato", sans-serif;
 }
 
-p,
-.paragraph-text {
+p, .paragraph-text {
   font-size: 2rem;
   line-height: 3.2rem;
   letter-spacing: 2px;
   text-transform: none;
-  font-family: "Lato", sans-serif;
 }
 
-input,
-textarea {
+input, textarea {
   font-size: 2rem;
   line-height: 3.2rem;
   letter-spacing: 2px;
   text-transform: uppercase;
-  font-family: "Lato", sans-serif;
-}
-
-a {
-  font-size: 2rem;
-  line-height: 2.9rem;
-  letter-spacing: 1.4px;
-  text-transform: uppercase;
-  font-family: "Lato", sans-serif;
-  color: #151514;
-  font-weight: 700;
-  text-align: center;
 }
 
 .logo {
@@ -312,7 +304,16 @@ a {
   line-height: 2.4rem;
   letter-spacing: 1.2px;
   text-transform: uppercase;
-  font-family: "Kumar One", cursive;
+}
+
+a {
+  font-size: 2rem;
+  line-height: 2.9rem;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: #151514;
+  font-weight: 700;
+  text-align: center;
 }
 
 .btn {
@@ -320,7 +321,6 @@ a {
   line-height: 3.2rem;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-family: "Kumar One", cursive;
   color: #F5F5F5;
   text-align: center;
 }
@@ -448,6 +448,7 @@ textarea {
           justify-content: space-between;
   height: inherit;
   padding-bottom: 5%;
+  width: 100%;
 }
 
 .global-headings {
@@ -488,13 +489,13 @@ textarea {
 .home-header {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  background: url(../sanctuary-helpers-final-images/header-home.jpg) center/cover;
+  background: url(../assets/header-home.jpg) center/cover;
   height: 100vh;
 }
 .home-header h1 {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  margin: 150px;
+  margin: 100px;
 }
 .home-header .rel-container {
   width: 55%;
@@ -511,14 +512,14 @@ textarea {
 .contact-header {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  background: url(../sanctuary-helpers-final-images/contact-image.jpg) center/cover;
+  background: url(../assets/contact-image.jpg) center/cover;
   height: 75vh;
 }
 
 .blog-header {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  background: url(../sanctuary-helpers-final-images/blog-image.jpg) center/cover;
+  background: url(../assets/blog-image.jpg) center/cover;
   height: 75vh;
 }
 
@@ -709,7 +710,7 @@ textarea {
 }
 
 .banner-img {
-  background: url(../sanctuary-helpers-final-images/banner-image.jpg) center/cover;
+  background: url(../assets/banner-image.jpg) center/cover;
   min-height: 60vh;
 }
 

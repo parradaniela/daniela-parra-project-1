@@ -1,7 +1,6 @@
 @use '../global/variables' as v;
 
 // Blog post
-
 .blog-post {
     @include v.flex-row-space-between;
     background-color: v.$color-secondary-light;

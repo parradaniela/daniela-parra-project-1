@@ -1,0 +1,37 @@
+@use '../global/variables' as v;
+
+@media (max-width: 768px) {
+    // Global styles
+    .btn {
+        width: 100%;
+    }
+
+    // Home page Header
+    .home-header {
+        background-position: 70%;
+    }
+
+    // Home page About section
+    .about-flex-img {
+        width: 60%;
+    }
+
+    // Home page Search section
+    .search-text p {
+        text-align: center;
+    }
+
+    // Blog page header
+    .blog-header {
+        background-position: 20%;
+    }
+
+    // Blog page Comments section
+    .blog-comments-display li {
+        flex-direction: column;
+
+        .blog-comments-text {
+            margin-top: v.$gutter-small;
+        }
+    }
+}

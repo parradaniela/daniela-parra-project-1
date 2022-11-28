@@ -1,0 +1,45 @@
+@use '../global/variables' as v;
+
+@media (max-width: 415px) {
+    // Global styles
+    .global-headings .logo {
+        margin-bottom: v.$gutter-medium;
+    }
+
+    input,
+    textarea {
+        padding: 5px;
+    }
+
+    .btn {
+        padding: 15px 0;
+    }
+
+    .wrapper {
+        width: 95%;
+    }
+
+    // Global nav 
+    .global-header-nav a {
+        font-size: 1.7rem;
+
+        &:hover, 
+        &:focus {
+            transform: scale(1.2);
+        }
+    }
+    
+    // Home page header
+    .home-header {
+        text-align: center;
+        background-position: 55%;
+    }
+
+
+    //Contact page form
+    .contact-form {
+        padding: 0;
+        background-color: v.$color-secondary-light;
+        border: none;
+    }
+}

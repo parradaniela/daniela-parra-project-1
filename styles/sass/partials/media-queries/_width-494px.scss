@@ -1,0 +1,33 @@
+@use '../global/variables' as v;
+
+@media (max-width: 494px) {
+    // Global nav 
+    .global-header-nav a {
+        padding: 15px;
+
+        &:first-child {
+            padding-left: 0;
+        }
+
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+
+    // Home page About section
+    .about-flex-img {
+        width: 70%;
+        margin-bottom: v.$gutter-small;
+    }
+
+    // Blog page header 
+    .blog-header {
+        background-position: 35%;
+    }
+
+    // Contact page socials
+    .contact-socials {
+        text-align: center;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,22 @@
+@use '../global/variables' as v;
+   
+@media (max-width: 650px) {
+    // Global styles
+    .global-headings .logo {
+        margin: v.$gutter-small 0 100px;
+    }
+
+    textarea {
+        margin-top: 8%;
+    }
+
+    // Home page Gallery section
+    .gallery-flex-item {
+        flex-basis: 100%;
+    } 
+
+    // Contage page header
+    .contact-header {
+        background-position: 55%;
+    }
+}

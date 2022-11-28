@@ -1,0 +1,85 @@
+@use '../global/variables' as v;
+
+@media (max-width: 1030px) {
+    // Global nav 
+    .global-header {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        
+        &-nav {
+            justify-content: space-between;
+            margin: 0;
+        }
+    }
+
+    // Home page About section
+    .about-flex {
+        flex-direction: column-reverse;
+        margin-top: 0;
+    
+        &-text {
+            margin-top: 7%;
+            margin-right: 0;
+            flex-basis: 100%;
+            text-align: center;
+        }
+
+        &-img {
+            width: 45%;  
+        }
+    }   
+
+    // Home page Gallery section 
+    .gallery-flex {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &-item {
+            flex-basis: 45%;
+            margin: 2%;
+
+        }
+    }
+
+    // Home page Articles section
+    .articles-row {
+
+        .flipped {
+            order: 1;
+        }
+
+        &-container {
+            padding: 5%;
+            flex-basis: 100%;
+            
+            &:first-child {
+                height: 50vh;
+            }
+
+            .img-left,
+            .img-right {
+                border-bottom: v.$border-img;
+                border-left: none;
+                border-right: none;
+            }
+
+            .text-left {
+                text-align: left;
+            }
+        }
+    }
+
+    // Home page Search section
+    .banner-img {
+        min-height: 50vh;
+    }    
+
+    // Blog page Aside section
+    .blog-post-aside .rel-container {
+        display: none;
+    }
+
+    .blog-post-aside .aside-text {
+        padding: 5%;
+    }
+}
